@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+.main {
+  margin: 20px 50px;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+.go-back {
+  border: none;
+  background: #673ab7;
+  padding: 10px 28px;
+  font-size: 17px;
+  font-weight: 600;
+  border-radius: 24px;
+  color: white;
+}
+.main-img {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  align-items: initial;
+  padding-top: 20px;
+}
+.airpods-img {
+  width: 82%;
+  height: 504px;
+}
+.img-article {
+  padding: 0px 30px;
+  display: flex;
+  flex-direction: column;
+}
+.img-article h3 {
+  font-size: 25px;
+  font-weight: 500;
+  padding: 25px 15px;
+  border-bottom: 1px solid #cecece;
+}
+.stars {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 25px 15px;
+  border-bottom: 1px solid #cecece;
+}
+.stars i {
+  color: #f4c10f;
+  padding-right: 5px;
+  font-size: 15px;
+}
+.stars p {
+  font-weight: 600;
+  font-size: 15px;
+}
+.price {
+  padding: 25px 15px;
+  border-bottom: 1px solid #cecece;
+  font-size: 15px;
+  font-weight: 500;
+}
+.description {
+  padding: 25px 15px;
+  font-size: 15px;
+  font-weight: 500;
+}
+.price-table {
+  display: flex;
+  flex-direction: column;
+}
+.row1 {
+  border: 1px solid #cecece;
+  padding: 15px 12px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.row1 h6 {
+  font-size: 15px;
+  font-weight: 600;
+}
+.row1 p {
+  font-size: 15px;
+  font-weight: 500;
+}
+.row1 a {
+  background-color: #505050;
+  padding: 10px 50px;
+  color: #ffffff;
+}
+.reviews {
+  padding: 20px 0px;
+}
+.reviews h3 {
+  font-weight: 600;
+}
+.level i {
+  color: #f4c10f;
+}
+.review-level {
+  display: flex;
+  padding: 40px 12px;
+  flex-direction: column;
+  border-bottom: 1px solid #cecece;
+}
+.review-level h4 {
+  font-weight: 600;
+  font-size: 15px;
+  padding-bottom: 5px;
+}
+.review-level p {
+  font-size: 15px;
+  font-weight: 500;
+  padding-top: 5px;
+}
+.review-level h6 {
+  font-weight: 600;
+  font-size: 15px;
+  padding-top: 15px;
+}
+.customer-review {
+  padding: 20px 12px;
+}
+.customer-review h3 {
+  font-weight: 600;
+  padding-bottom: 20px;
+}
+.sign-in {
+  background-color: aqua;
+  padding: 15px 10px;
+  text-align: left;
+  font-size: 15px;
+  font-weight: 500;
+}
