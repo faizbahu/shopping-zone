@@ -26,26 +26,111 @@
 .cart-page{
   display:flex;
   justify-content: space-around;
-  margin-top: 147px;
+  margin-top: 26px;
+  margin-bottom: 70px;
 }
-.row1 {
-  border: 1px solid #cecece;
+.subtotal{
+  border-top: 3px solid black;
+  border-left: 3px solid black;
+  border-right: 3px solid black;
   padding: 15px 12px;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-evenly;
+  
 }
-.row1 h6 {
-  font-size: 15px;
+.subtotal1{
+  border-bottom: 3px solid black;
+  border-right: 3px solid black;
+  border-left: 3px solid black;
+  border-top: 3px solid black;
+  padding: 16px;
+  
+}
+.subtotal h6 {
+  font-size: 21px;
   font-weight: 600;
 }
-.row1 p {
-  font-size: 15px;
+.subtotal h5{
+  font-size: 17px;
   font-weight: 500;
 }
-.row1 a {
+.subtotal p {
+  font-size: 15px;
+  font-weight: 600;
+  margin-left: 9px;
+}
+.subtotal a {
   background-color: #505050;
   padding: 10px 50px;
   color: #ffffff;
+}
+.items-cart{
+  display: flex;
+    align-items: center;
+    border-bottom: 1px solid #cecece;
+}
+.items-item{
+  display: flex;
+  align-items: center;
+}
+.items-item img{
+  width: 100px;
+    height: 120px;
+    padding: 12px;
+}
+.header{
+  margin-left: 70px;
+    margin-top: 50px;
+    font-size: 40px;
+    font-weight: 500;
+}
+.form-control{
+  padding: 9px 15px;
+}
+.price2{
+  padding: 20px;
+  font-size: 17px;
+}
+.item-name{
+  padding: 50px;
+}
+.trash{
+  font-size: 22px;
+}
+.trash-button{
+  border: none;
+    background: none;
+    margin-left: 23px;
+    padding: 6px;
+    cursor: pointer;
+}
+.trash-button:hover{
+  background: #e91e63;
+    padding: 6px;
+    color: white;
+    cursor: pointer;
+}
+.checkout{
+  border: none;
+    background: #ff6e87;
+    padding: 12px 34px;
+    font-size: 19px;
+    font-weight: 600;
+    width: -webkit-fill-available;
+    cursor: pointer;
+}
+.checkout:hover{
+  background: #ff1d44;
+    color: white;
+}
+textarea:focus,
+.quantity:focus {
+  color: black !important;
+  font-size: 17px !important;
+}
+.quantity,
+select,
+textarea {
+  color: black;
 }

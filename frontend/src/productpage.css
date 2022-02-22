@@ -19,6 +19,9 @@ a {
   border-radius: 24px;
   color: white;
 }
+.quantity{
+  padding: 2px 11px;
+}
 .main-img {
   display: grid;
   grid-template-columns: 2fr 1fr 1fr;
@@ -26,13 +29,14 @@ a {
   padding-top: 20px;
 }
 .airpods-img {
-  width: 82%;
-  height: 504px;
+  width: 442px;
+  height: 514px;
 }
 .img-article {
   padding: 0px 30px;
   display: flex;
   flex-direction: column;
+  margin-top: 71px;
 }
 .img-article h3 {
   font-size: 25px;
@@ -58,7 +62,7 @@ a {
   font-size: 15px;
 }
 .price {
-  padding: 25px 15px;
+  padding: 15px 15px;
   border-bottom: 1px solid #cecece;
   font-size: 15px;
   font-weight: 500;
@@ -71,17 +75,52 @@ a {
 .price-table {
   display: flex;
   flex-direction: column;
+  align-items: center;
+    margin-top: 100px;
 }
 .row1 {
-  border: 1px solid #cecece;
-  padding: 15px 12px;
+  border-top: 3px solid black;
+    border-left: 3px solid black;
+    border-right: 3px solid black;
+    padding: 20px 13px;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  width: 227px;
+}
+/* .addto:disabled {
+  background: blue;
+} */
+.addto {
+  border: none;
+    background: #ff6e87;
+    padding: 12px 34px;
+    font-size: 19px;
+    font-weight: 600;
+    width: -webkit-fill-available;
+    cursor: pointer;
+}
+.addto:hover{
+  background: #ff1d44;
+    color: white;
+}
+.addto:disabled:hover{
+  background: #ff6e87;
+  color: #b75263;
+}
+.addto-div{
+  border-bottom: 3px solid black;
+    border-right: 3px solid black;
+    border-left: 3px solid black;
+    border-top: 3px solid black;
+    width: 229px;
+    padding: 15px 12px;
+    border-bottom-left-radius: 14px;
+    border-bottom-right-radius: 14px;
 }
 .row1 h6 {
-  font-size: 15px;
+  font-size: 18px;
   font-weight: 600;
 }
 .row1 p {
@@ -137,3 +176,168 @@ a {
   font-size: 15px;
   font-weight: 500;
 }
+.checking{
+  padding: 2px 14px;
+}
+@media only screen and (max-width:1070px) {
+  nav a{
+    font-size: 32px;
+  }
+  .search-products {
+    width: 152px;
+    padding: 14px 35px;
+    margin-left: 50px;
+}
+.search-button {
+  padding: 14px 26px;
+  font-size: 17px;
+}
+}
+@media only screen and (max-width:1066px) {
+  .airpods-img {
+    width: 372px;
+    height: 464px;
+}
+nav a {
+  font-size: 27px;
+}
+  .search-products{
+    width: 142px;
+    padding: 12px 37px;
+  }
+  .search-button{
+    padding: 12px 26px;
+    font-size: 17px;
+  }
+  li.nav-item{
+    margin-left: 19px;
+    margin-right: 18px
+  }
+  .cart{
+    font-size: 25px;
+  }
+  li.nav-item2{
+    margin-right: 0px;
+  }
+  .sign{
+    font-size: 25px;
+  }
+  .img-article{
+    margin-top: 0px;}
+}
+@media only screen and (max-width:900px) {
+  .main-img{
+    grid-template-columns: 2fr 1fr;
+  }
+  .img-article{
+    margin-top: 0px;
+    padding: 0px 4px;
+  }
+  .airpods-img{
+    width: 372px;
+    height: 444px;
+  }
+  .img-article h3{
+    padding: 7px 0px;
+  }
+  .checking{
+    padding: 0px;
+  }
+  .rating{
+    padding: 2px 18px;
+  }
+  .price{
+    padding: 0px;
+  }
+  .description{
+    padding: 11px 0px;
+  }
+  .price-table{
+    margin-top: 30px;
+    display: block;
+  }
+  nav a{
+    font-size: 24px;
+  }
+  .search-products{
+    width: 127px;
+    padding: 8px 17px;
+  }
+  .search-button{
+    padding: 10px 24px;
+    font-size: 14px;
+  }
+  li.nav-item{
+    margin-left: 19px;
+    margin-right: 18px
+  }
+  .cart{
+    font-size: 20px;
+  }
+  li.nav-item2{
+    margin-right: 0px;
+  }
+  .sign{
+    font-size: 20px;
+  }
+
+}
+
+@media only screen and (max-width:699px) {
+  .main-img{
+    display: block !important;
+  }
+  .expo{
+    width: 427px;
+    margin: auto;
+  }
+  .airpods-img{
+    width: 418px;
+    height: 451px;
+  }
+  .img-article{
+    margin-top: 71px;
+  }
+  }
+@media only screen and (max-width:600px) {
+  .main-img{
+    display: block !important;
+  }
+  .expo{
+    width: 367px;
+  margin: auto;
+  }
+  .airpods-img{
+    width: 348px;
+  height: 451px;
+  }
+  }
+@media only screen and (max-width:500px) {
+  .main-img{
+    display: block !important;
+  }
+  .expo{
+    width: 287px;
+    margin: auto;
+  }
+  .airpods-img{
+    width: 296px;
+    height: 381px;
+  }
+  }
+@media only screen and (max-width:424px) {
+.main-img{
+  display: block !important;
+}
+.expo{
+  width: 267px;
+    margin: auto;
+}
+.airpods-img{
+  width: 262px;
+  height: 364px;
+}
+}
+
+
+ 

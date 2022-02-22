@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
 }
-.for-center {
+.for-centerss{
   margin-top: 101px;
   display: flex;
   justify-content: center;
@@ -35,18 +35,25 @@ input[type="password"] {
 }
 form button {
   border: none;
-  background: #465ddb;
-  color: white;
-  padding: 7px 26px;
-  font-size: 16px;
-  font-weight: 500;
-  cursor: pointer;
+  background: #25bbff;
+    color: white;
+    padding: 10px 27px;
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 6px;
+    margin-left: 10px;
+}
+form button:hover{
+  background: #0081bb;
+  transition: all 0.3s ease-in-out;
 }
 form p {
   margin-top: 12px;
+  margin-left: 10px;
 }
 form p a {
-  color: black;
+  color: white;
   outline: none;
   text-decoration: none;
   font-weight: 700;
@@ -60,4 +67,27 @@ form p {
 .icon- {
   padding: 10px 0px;
   border-bottom: 2px solid #03a9f452;
+}
+.icon- {
+  padding: 15px 0px 10px 6px;
+  border-bottom: 2px solid #03a9f452;
+}
+.for-center{
+  display: flex;
+  justify-content: center;
+  /* background-color: #e84393; */
+  /* background-image: linear-gradient(315deg, #e84393 0%, #161616 74%); */
+  padding-top: 101px;
+  padding-bottom: 85px;
+  background-color: #0d0a0b;
+    background-image: linear-gradient(315deg, #0d0a0b 0%, #009fc2 74%);
+}
+textarea:focus,
+input:focus {
+  color: white;
+}
+input,
+select,
+textarea {
+  color: white;
 }

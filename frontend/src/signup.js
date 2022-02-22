@@ -1,163 +1,113 @@
-import React, { useState } from "react";
-import axios from "axios";
-import "./signup.css";
-import { NavLink, useHistory } from "react-router-dom";
-export default function Signin() {
-  const [user, setUser] = useState({
-    name: "",
-    email: "",
-    password: "",
-    cpassword: "",
-  });
-  const [loading, setLoading] = useState(false);
-  const [error, setError] = useState(false);
-  const [errMsg, setErrMsg] = useState("");
-  const history = useHistory();
-  const handleInput = (e) => {
-    const { name, value } = e.target;
-    setUser({
-      ...user,
-      [name]: value,
-    });
-    setError(false);
-    setErrMsg("");
-  };
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    if (user.password === user.cpassword) {
-      try {
-        const config = {
-          headers: {
-            "Content-type": "application/json",
-          },
-        };
-        setLoading(true);
-        const { data } = await axios.post(
-          "/api/users/register/",
-          { name: user.name, email: user.email, password: user.password },
-          config
-        );
-        setUser({
-          name: "",
-          email: "",
-          password: "",
-          cpassword: "",
-        });
-        setLoading(false);
+import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
+import { Form, Button, Row, Col } from "react-bootstrap";
+import { useDispatch, useSelector } from "react-redux";
+import Message from "./Message";
+import Loader from "./Loader";
+import FormContainer from "./FormContainer.js";
+import { register } from "./actions/userAction.js";
+import './signup.css';
 
-        history.push("/signin");
-      } catch (error) {
-        setError(true);
-        setLoading(false);
+export const Signup = ({ location, history }) => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [confirmPassword, setConfirmPassword] = useState("");
+  const [message, setMessage] = useState(null);
+  const dispatch = useDispatch();
 
-        setErrMsg(
-          error.response && error.response.data.detail
-            ? error.response.data.detail
-            : error.message
-        );
-      }
-    } else {
-      setLoading(false);
+  const userRegister = useSelector((state) => state.userLogin);
+  const { loading, error, userInfo } = userRegister;
 
-      setError(true);
-      setErrMsg("Password Not Match");
+  const redirect = location.search ? location.search.split("=")[1] : "/";
+
+  useEffect(() => {
+    if (userInfo) {
+      history.push(redirect);
     }
+  }, [history, userInfo, redirect]);
+
+  const submitHandler = (e) => {
+    e.preventDefault();
+    if(password!=confirmPassword){
+      setMessage('Passwords donot match')
+    }else{
+      dispatch(register(name,email, password));
+    }
+    
   };
+
   return (
-    <React.Fragment>
-      <div className="for-center2">
-        <form className="form-class" onSubmit={handleSubmit}>
-          {error && (
-            <div
-              style={{
-                backgroundColor: "pink",
-                width: "max-content",
-                padding: "10px",
-              }}
-              className="alert alert-danger"
-              role="alert"
-            >
-              {errMsg}
-            </div>
-          )}
-          <h3>SIGN Up</h3>
+    <div className="for-center" style={{display:"flex",justifyContent:"center"}}>
+      {error && <Message variant="danger">{error}</Message>}
+      {loading && <Loader />}
+      
+      <form className="form-class" onSubmit={submitHandler}>
+      <h3>SIGN UP</h3>
+      {message && <Message variant="danger">{message}</Message>}
+      <div className="form-group">
+          <i class="zmdi zmdi-account icon-"></i>
+          <input
+            type="name"
+            className="form-control"
+            placeholder="Enter name"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+          />
+        </div>
+        <div className="form-group">
+          <i class="zmdi zmdi-email icon-"></i>
+          <input
+            type="email"
+            className="form-control"
+            placeholder="Enter email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+          />
+        </div>
+        
+        <div className="form-group">
+          <i class="zmdi zmdi-lock icon-"></i>
+          <input
+            type="password"
+            className="form-control"
+            placeholder="Enter password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+          />
+        </div>
 
-          <div className="form-group">
-            {/* <label>Email address</label><br></br> */}
-            <i class="zmdi zmdi-account icon-"></i>
-            <input
-              type="text"
-              className="form-control name"
-              placeholder="Enter name"
-              name="name"
-              value={user.name}
-              onChange={handleInput}
-            />
-          </div>
-          <div className="form-group">
-            {/* <label>Email address</label><br></br> */}
-            <i class="zmdi zmdi-email icon-"></i>
-            <input
-              type="email"
-              className="form-control"
-              placeholder="Enter email"
-              name="email"
-              value={user.email}
-              onChange={handleInput}
-            />
-          </div>
+        <div className="form-group">
+          <i class="zmdi zmdi-lock icon-"></i>
+          <input
+            type="password"
+            className="form-control"
+            placeholder="Confirm password"
+            value={confirmPassword}
+            onChange={(e) => setConfirmPassword(e.target.value)}
+          />
+        </div>
 
-          <div className="form-group">
-            {/* <label>Email address</label><br></br> */}
-            <i class="zmdi zmdi-lock icon-"></i>
-            <input
-              type="password"
-              className="form-control"
-              placeholder="Enter password"
-              name="password"
-              value={user.password}
-              onChange={handleInput}
-            />
-          </div>
-          <div className="form-group">
-            {/* <label>Email address</label><br></br> */}
-            <i class="zmdi zmdi-lock icon-"></i>
-            <input
-              type="password"
-              className="form-control"
-              placeholder="Confirm Password"
-              name="cpassword"
-              value={user.cpassword}
-              onChange={handleInput}
-            />
-          </div>
+        <Button type="submit" variant="primary">
+          Register
+        </Button>
 
-          {/* <div className="form-group">
-                    <div className="custom-control custom-checkbox">
-                        <input type="checkbox" className="custom-control-input" id="customCheck1" />
-                        <label className="custom-control-label" htmlFor="customCheck1">Remember me</label>
-                    </div>
-                </div> */}
-          {loading ? (
-            <button className="btn btn-primary btn-block">loading..</button>
-          ) : (
-            <button type="submit" className="btn btn-primary btn-block">
-              SIGN UP
-            </button>
-          )}
-          <p className="forgot-password text-right">
-            Already Reagistered ?{" "}
-            <NavLink
+        <p className="forgot-password text-right" style={{color: "black"}}>
+            Have an Account?{" "}
+            <Link
               activeClassName="is-active"
               exact={true}
               className="nav-link"
               to="/signin"
             >
               <a href="#">Login</a>
-            </NavLink>
+            </Link>
           </p>
-        </form>
-      </div>
-    </React.Fragment>
+      </form>
+
+      
+    </div>
   );
-}
+};
+
+export default Signup;
