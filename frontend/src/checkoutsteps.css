@@ -1,0 +1,18 @@
+.disabled{
+     color: #9b8e8e;
+}
+.nav-flex{
+     display: flex;
+     justify-content: center;
+     padding-top: 50px;
+    /* padding: 35px 341px; */
+    /* padding: 0px 25px; */
+    margin-right: 50px;
+}
+.nav-flex-items{
+ margin-left: 50px;
+}
+.nav-flex-items p{
+     font-size: 27px;
+    font-weight: 700;
+}
