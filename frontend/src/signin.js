@@ -30,13 +30,19 @@ export const Signin = ({ location, history }) => {
   };
 
   return (
-    <div className="for-center" style={{paddingBottom:"202px",display:"flex",justifyContent:"center"}}>
-      
-      {error && <Message variant="danger">{error}</Message>}
-      {loading && <Loader />}
-      
+    <div
+      className="for-center"
+      style={{
+        paddingBottom: "202px",
+        display: "flex",
+        justifyContent: "center",
+      }}
+    >
       <form className="form-class" onSubmit={submitHandler}>
-      <h3>LOG IN</h3>
+        {/* <Message></Message> */}
+        <h3>LOG IN</h3>
+        {error && <Message>{error}</Message>}
+        {/* {loading && <Loader />} */}
         <div className="form-group">
           <i class="zmdi zmdi-email icon-"></i>
           <input
@@ -47,7 +53,7 @@ export const Signin = ({ location, history }) => {
             onChange={(e) => setEmail(e.target.value)}
           />
         </div>
-        
+
         <div className="form-group">
           <i class="zmdi zmdi-lock icon-"></i>
           <input
@@ -59,24 +65,22 @@ export const Signin = ({ location, history }) => {
           />
         </div>
 
-        <Button type="submit" variant="primary">
+        <button style={{ borderRadius: "6px" }} type="submit" variant="primary">
           Sign In
-        </Button>
+        </button>
 
-        <p className="forgot-password text-right" style={{color: "black"}}>
-            New Customer?{" "}
-            <Link
-              activeClassName="is-active"
-              exact={true}
-              className="nav-link"
-              to="/signup"
-            >
-              <a href="#">Register</a>
-            </Link>
-          </p>
+        <p className="forgot-password text-right" style={{ color: "black" }}>
+          New Customer?{" "}
+          <Link
+            activeClassName="is-active"
+            exact={true}
+            className="nav-link"
+            to="/signup"
+          >
+            <a href="#">Register</a>
+          </Link>
+        </p>
       </form>
-
-      
     </div>
   );
 };

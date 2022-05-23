@@ -57,7 +57,7 @@ const Shipping = ({ history }) => {
           </div>
 
           <div className="form-group">
-          <i class="fa fa-address-card icon-"></i>
+            <i class="fa fa-address-card icon-"></i>
             {/* <i class="zmdi zmdi-lock icon-"></i> */}
             <input
               type="postalcode"
@@ -80,9 +80,13 @@ const Shipping = ({ history }) => {
             />
           </div>
 
-          <Button type="submit" variant="primary">
+          <button
+            style={{ borderRadius: "6px" }}
+            type="submit"
+            variant="primary"
+          >
             Continue
-          </Button>
+          </button>
         </form>
       </div>
     </div>

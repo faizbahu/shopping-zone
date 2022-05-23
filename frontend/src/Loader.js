@@ -1,20 +1,15 @@
 import React from "react";
-import { Spinner } from "react-bootstrap";
-
+// import { Spinner } from "react-bootstrap";
+import ClipLoader from "react-spinners/ClipLoader";
 const Loader = () => {
   return (
-    <Spinner
-      animation="border"
-      role="status"
-      style={{
-        width: "100px",
-        height: "100px",
-        margin: "auto",
-        display: "block",
-      }}
+    <ClipLoader
+    loading={true}
+    size={150}
+    style={{justifyContent:"center"}}
     >
       <span className="sr-only">Loading...</span>
-    </Spinner>
+    </ClipLoader>
   );
 };
 

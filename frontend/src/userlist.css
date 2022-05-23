@@ -1,0 +1,17 @@
+.list-button {
+     border: none;
+     background: #e93b76;
+     color: white;
+     padding: 10px 17px;
+     font-size: 13px;
+     font-weight: 600;
+     cursor: pointer;
+     border-radius: 6px;
+     margin-left: 10px;
+     cursor: pointer;
+}
+
+.list-button:hover {
+     background: #c11f56;
+     transition: all 0.3s ease-in-out;
+}

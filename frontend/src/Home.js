@@ -1,72 +1,148 @@
 import React, { useState, useEffect } from "react";
+import Pagination from "react-js-pagination";
 import "./home.css";
 import Footer from "./Footer.js";
 import { Carousel } from "react-responsive-carousel";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 // import shirt from "./images/f11.jpg";
 // import Rating from "./Rating";
+import logo from "../src/images/web logo.png";
 import axios from "axios";
 import Product from "./Product.js";
-// import ProductPage from "./ProductPage";
-export default function Home(props) {
-  const [products, setProducts] = useState([]);
+import { listProducts } from "./actions/productActions";
+import { useDispatch, useSelector } from "react-redux";
+import Paginate from "./Paginate";
+import ProductPage from "./ProductPage";
+export default function Home({ match, history }, props) {
+  const keyword = match.params.keyword;
+  const pageNumber = match.params.pageNumber || 1;
+  const dispatch = useDispatch();
+  const [activePage, setActivePage] = useState(3);
+  // const [products, setProducts] = useState([]);
+  const productList = useSelector((state) => state.productList);
+  const { loading, error, products, page, pages } = productList;
+
   useEffect(() => {
-    const fetchProducts = async () => {
-      const { data } = await axios.get("/api/products");
-      setProducts(data);
-    };
-    fetchProducts();
-  }, []);
+    dispatch(listProducts(keyword, pageNumber));
+
+    // const fetchProducts = async () => {
+    //   const { data } = await axios.get("/api/products");
+    //   setProducts(data);
+    // };
+    // fetchProducts();
+  }, [dispatch, keyword, pageNumber]);
   // const addToCartHandler=()=>{
   //   history.push(`/cart/${match.params._id}`)
   // }
-  const i=3;
-  var film = products.slice(8, 12);
-  console.log(film)
+  function getMultipleRandom(products, num) {
+    const shuffled = [...products].sort(() => 0.5 - Math.random());
+    return shuffled.slice(0, num);
+  }
+
+  // const arr = ['b', 'c', 'a', 'd'];
+  // console.log(getMultipleRandom(products, 20));
+  // var film = products.slice(8, 12);
+
+  function getSingleRandom(products, num) {
+    const shuffled = [...products].sort(() => 0.5 - Math.random());
+    return shuffled.slice(0, num);
+  }
+  function handlePageChange(pageNumber) {
+    console.log(`active page is ${pageNumber}`);
+    setActivePage(pageNumber);
+    history.push(`/page/${pageNumber}`);
+  }
+
+  // const arr = ['b', 'c', 'a', 'd'];
+  // console.log(getSingleRandom(products, 20));
+
   return (
     <React.Fragment>
-      <div className="top1-div">
-        <div className="container1">
-          <Carousel
-            showIndicators={true}
-            showStatus={false}
-            interval={2000}
-            autoPlay={true}
-            infiniteLoop={true}
-            preventMovementUntilSwipeScrollTolerance={false}
-            stopOnHover={false}
-          >
-          {film.map((product) => (
-            <div className="contain">
-              <img className="images" src={product.image} />
-            <div className="description">
-            
-           <h1 className="xv">{product.name}</h1> 
-           <h6 className="xv">RS.{product.price}</h6>
-           <p className="xv">In Stock.</p>
-           <NavLink
-                  activeClassName="is-active"
-                  exact={true}
-                  className="nav-link"
-                  to={`/product/${product._id}`}
-                >
-                  <button className="carting">ADD TO CART</button>
-                </NavLink>
-           </div> 
-           </div>
-           ))}
-            </Carousel>
+      {!keyword && (
+        <div className="bulb">
+          <div className="categories">
+            <p className="cate">Categories</p>
+            <img className="design" src={logo} alt="" />
+            <div className="cati-items">
+              <Link to="/Shirts">
+                <h1>Shirts</h1>
+              </Link>
+              <Link to="/jeans">
+                <h1>Men's Jeans</h1>
+              </Link>
+              <Link to="/kids">
+                <h1>Kids Wear</h1>
+              </Link>
+              <Link to="/Shoesscreen">
+                <h1>Shoes</h1>
+              </Link>
+            </div>
+          </div>
+          <div className="top1-div">
+            <div className="container1">
+              <Carousel
+                showIndicators={true}
+                showStatus={false}
+                interval={2000}
+                autoPlay={false}
+                infiniteLoop={true}
+                preventMovementUntilSwipeScrollTolerance={false}
+                stopOnHover={false}
+              >
+                {getMultipleRandom(products, 4).map((product) => (
+                  // {products.map((product) => (
+                  <div className="contain">
+                    <img className="images" src={product.image} />
+                    <div className="description">
+                      <h1 className="xv">{product.name}</h1>
+                      <h6 className="xv">RS.{product.price}</h6>
+                      <p className="xv">In Stock.</p>
+                      <NavLink
+                        activeClassName="is-active"
+                        exact={true}
+                        className="nav-link"
+                        to={`/product/${product._id}`}
+                      >
+                        <button className="carting">
+                          ADD TO CART
+                          <i
+                            style={{ marginLeft: "11px", fontSize: "17px" }}
+                            class="fa fa-arrow-right"
+                          ></i>
+                        </button>
+                      </NavLink>
+                    </div>
+                  </div>
+                ))}
+              </Carousel>
+            </div>
+          </div>
         </div>
-      </div>
+      )}
       <div className="for-products">
-        <h1>TOP RATED PRODUCTS</h1>
+        <h1>LATEST PRODUCTS</h1>
         <div className="listing-products">
-          {products.map((product) => (
-            <Product product={product}key={product._id} />
+          {getMultipleRandom(products, 20).map((product) => (
+            // {products.map((product) => (
+            <Product product={product} key={product._id} />
           ))}
         </div>
+        {/* <Paginate pages={pages} page={page} keyword={keyword ? keyword : ""} /> */}
+        <div className="height">
+          <Pagination
+            activePage={activePage}
+            itemsCountPerPage={3}
+            totalItemsCount={450}
+            pageRangeDisplayed={5}
+            onChange={handlePageChange}
+            prevPageText="PREV"
+            nextPageText="NEXT"
+            // prevPageText={<i class="fa fa-angle-left"></i>}
+            // nextPageText={<i class="fa fa-angle-right"></i>}
+          ></Pagination>
         </div>
+      </div>
       <Footer />
     </React.Fragment>
   );

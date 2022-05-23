@@ -13,6 +13,8 @@
 }
 .carousel .slide img {
   margin-left: 170px;
+  object-fit: contain;
+    background: white;
 }
 .contain {
   padding-top: 15px;
@@ -34,8 +36,9 @@
 }
 .contain h1 {
   color: #1c2a36;
-  font-size: 38px;
-  font-weight: 600;
+  font-size: 34px;
+    font-weight: 600;
+    width: 316px;
 }
 .contain h6 {
   font-size: 24px;
@@ -80,7 +83,8 @@
 .products img {
   width: 303px;
   height: 397px;
-  object-fit: cover;
+  object-fit: contain;
+    background: white;
   border-radius: 21px;
   box-shadow: rgb(60 64 67 / 30%) 1px 5px 15px -1px,
     rgb(60 64 67 / 15%) 0px 0px 3px 2px;
@@ -111,6 +115,7 @@
   font-weight: 600;
   padding: 2px 18px;
   color: white;
+  width: 292px;
 }
 .products h2 {
   font-size: 17px;

@@ -6,7 +6,7 @@ import Message from "./Message";
 import Loader from "./Loader";
 import FormContainer from "./FormContainer.js";
 import { register } from "./actions/userAction.js";
-import './signup.css';
+import "./signup.css";
 
 export const Signup = ({ location, history }) => {
   const [name, setName] = useState("");
@@ -29,23 +29,25 @@ export const Signup = ({ location, history }) => {
 
   const submitHandler = (e) => {
     e.preventDefault();
-    if(password!=confirmPassword){
-      setMessage('Passwords donot match')
-    }else{
-      dispatch(register(name,email, password));
+    if (password != confirmPassword) {
+      setMessage("Passwords donot match");
+    } else {
+      dispatch(register(name, email, password));
     }
-    
   };
 
   return (
-    <div className="for-center" style={{display:"flex",justifyContent:"center"}}>
-      {error && <Message variant="danger">{error}</Message>}
-      {loading && <Loader />}
-      
+    <div
+      className="for-center"
+      style={{ display: "flex", justifyContent: "center" }}
+    >
+      {/* {error && <Message variant="danger">{error}</Message>}
+      {loading && <Loader />} */}
+
       <form className="form-class" onSubmit={submitHandler}>
-      <h3>SIGN UP</h3>
-      {message && <Message variant="danger">{message}</Message>}
-      <div className="form-group">
+        <h3>SIGN UP</h3>
+        {message && <Message variant="danger">{message}</Message>}
+        <div className="form-group">
           <i class="zmdi zmdi-account icon-"></i>
           <input
             type="name"
@@ -65,7 +67,7 @@ export const Signup = ({ location, history }) => {
             onChange={(e) => setEmail(e.target.value)}
           />
         </div>
-        
+
         <div className="form-group">
           <i class="zmdi zmdi-lock icon-"></i>
           <input
@@ -88,24 +90,22 @@ export const Signup = ({ location, history }) => {
           />
         </div>
 
-        <Button type="submit" variant="primary">
+        <button style={{ borderRadius: "6px" }} type="submit" variant="primary">
           Register
-        </Button>
+        </button>
 
-        <p className="forgot-password text-right" style={{color: "black"}}>
-            Have an Account?{" "}
-            <Link
-              activeClassName="is-active"
-              exact={true}
-              className="nav-link"
-              to="/signin"
-            >
-              <a href="#">Login</a>
-            </Link>
-          </p>
+        <p className="forgot-password text-right" style={{ color: "black" }}>
+          Have an Account?{" "}
+          <Link
+            activeClassName="is-active"
+            exact={true}
+            className="nav-link"
+            to="/signin"
+          >
+            <a href="#">Login</a>
+          </Link>
+        </p>
       </form>
-
-      
     </div>
   );
 };

@@ -1,6 +1,7 @@
 .top1-div{
   background: url(./images/banner.png);
     background-position: center;
+    width: 80%;
 }
 .container1 {
   /* background: radial-gradient( 200.06% 102.25% at 50% 102.25%, #302632 0, #000000 95.92% ); */
@@ -13,6 +14,49 @@
 }
 .carousel .slide img {
   margin-left: 170px;
+  object-fit: contain;
+    background: white;
+  }
+  
+  .categories p {
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+  
+  .design {
+    width: 161px;
+    /* background: rgb(0 0 0 / 90%); */
+    padding: 7px;
+    border-radius: 11%;
+    /* text-align: center;
+                                  display: flex;
+                                  justify-content: center;
+                                  margin: auto; */
+  }
+  
+  .categories {
+    background: #0c0116;
+    flex: 1 1;
+    color: white;
+    /* text-align: center; */
+    padding-top: 50px;
+    padding-left: 20px;
+  }
+  
+  .cati-items {
+    margin-top: 30px;
+  }
+  
+  .cati-items h1 {
+    margin: 10px;
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+  }
+  
+  .cati-items h1:hover {
+    color: #db5660;
+    transition: all 0.2s ease-in-out;
 }
 .contain {
   padding-top: 15px;
@@ -22,6 +66,10 @@
     flex-direction: row;
     /* justify-content: center; */
     margin-top: 100px;
+}
+.bulb {
+  display: flex;
+  justify-content: space-evenly;
 }
 .images {
   width: 332px !important;
@@ -34,8 +82,9 @@
 }
 .contain h1 {
   color: #1c2a36;
-  font-size: 38px;
-  font-weight: 600;
+  font-size: 34px;
+    font-weight: 600;
+    width: 316px;
 }
 .contain h6 {
   font-size: 24px;
@@ -77,10 +126,60 @@
   position: relative;
   text-align: left;
 }
+.pagination {
+  display: flex;
+  justify-content: center;
+}
+
+.height {
+  padding: 21px 1px;
+}
+
+.pagination li {
+  list-style: none;
+  /* margin: 14px 1px;
+  border: 1px solid black; */
+  background: white;
+  padding: 5px 4px;
+}
+
+.pagination li a {
+  padding: 6px 11px;
+}
+
+.pagination li:hover {
+  background: black;
+}
+
+.pagination li a:hover {
+  color: white;
+}
+
+.pagination li:first-child {
+  display: none;
+}
+
+.pagination li:last-child {
+  display: none;
+}
+
+/* .active {
+  background: white !important;
+}
+
+a:active {
+  color: white;
+} */
+
+.disabled {
+  /* background: white;
+  padding: 9px; */
+}
 .products img {
   width: 303px;
   height: 397px;
-  object-fit: cover;
+  object-fit: contain;
+    background: white;
   border-radius: 21px;
   box-shadow: rgb(60 64 67 / 30%) 1px 5px 15px -1px,
     rgb(60 64 67 / 15%) 0px 0px 3px 2px;

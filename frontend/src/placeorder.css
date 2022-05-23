@@ -1,0 +1,102 @@
+.bbb {
+    background-color: #0d0a0b;
+    background-image: linear-gradient(315deg, #0d0a0b 0%, #009fc2 74%);
+    padding-bottom: 14px;
+}
+
+.sequencing {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 1px solid #cecece;
+    padding-bottom: 12px;
+}
+
+.order-items h3 {
+    font-size: 33px;
+    font-weight: 500;
+    margin-top: 30px;
+    color: white;
+}
+
+.item-price {
+    font-weight: 700;
+    font-size: 17px;
+    color: white;
+}
+
+.image-image img {
+    width: 100px;
+    height: 120px;
+    padding: 12px;
+    object-fit: contain;
+}
+
+.product-name a {
+    font-weight: 700;
+    font-size: 17px;
+    color: white;
+}
+
+.shiping {
+    font-size: 33px;
+    font-weight: 500;
+    color: white;
+}
+
+.bordering {
+    border-bottom: 1px solid #cecece;
+    padding-bottom: 17px;
+    margin-top: "19px";
+    color: white;
+}
+
+.top-summary {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 60px;
+    color: white;
+}
+
+.order {
+    border: 1px solid #00000054;
+    height: fit-content;
+    color: white;
+}
+
+.order h3 {
+    font-size: 26px;
+    border-bottom: 1px solid #00000054;
+    padding: 15px 33px;
+    color: white;
+}
+
+.order2 {
+    font-size: 28px;
+    border-bottom: 1px solid #00000054;
+    padding: 15px 29px;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+.order2 h1 {
+    font-size: 19px;
+    color: white;
+}
+
+.order2 h2 {
+    font-size: 19px;
+    color: white;
+}
+
+.checkout2 {
+    border: none;
+    background: #ff6e87;
+    padding: 12px 34px;
+    font-size: 19px;
+    font-weight: 600;
+    width: -webkit-fill-available;
+    cursor: pointer;
+    color: white;
+}

@@ -4,7 +4,7 @@
   font-family: "Montserrat", sans-serif;
 }
 .main {
-  margin: 20px 50px;
+  /* margin: 20px 50px; */
 }
 a {
   text-decoration: none;
@@ -31,6 +31,7 @@ a {
 .airpods-img {
   width: 442px;
   height: 514px;
+  object-fit: contain;
 }
 .img-article {
   padding: 0px 30px;
@@ -142,10 +143,11 @@ a {
   color: #f4c10f;
 }
 .review-level {
-  display: flex;
+  /* display: flex;
   padding: 40px 12px;
   flex-direction: column;
   border-bottom: 1px solid #cecece;
+    */ padding: 21px 0px;
 }
 .review-level h4 {
   font-weight: 600;
@@ -163,7 +165,7 @@ a {
   padding-top: 15px;
 }
 .customer-review {
-  padding: 20px 12px;
+  padding: 45px 0px;
 }
 .customer-review h3 {
   font-weight: 600;

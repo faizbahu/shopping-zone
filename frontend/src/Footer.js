@@ -64,7 +64,7 @@ export default function Footer() {
                 </li>
               </ul>
             </div>
-            <p className="copyright">Company Name © 2018</p>
+            <p className="copyright">Company Name © 2022</p>
           </div>
         </footer>
       </div>

@@ -112,7 +112,12 @@ li.nav-item {
   margin-right: 40px;
 }
 li.nav-item2{
-  margin-right: 92px;
+  margin-right: 27px;
+    /* margin-top: 2px; */
+  }
+  
+  .chaki {
+    margin-right: 38px;
 }
 .brand-title {
   font-size: 31px;
@@ -213,6 +218,23 @@ nav a {
   z-index: 1;
   margin-top: 33px;
 }
+.dropdown-content2 {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  margin-top: 33px;
+}
+
+.dropdown-content2 a {
+  font-size: 20px;
+  border-bottom: 4px solid black;
+  color: black;
+  padding: 9px 36px;
+  display: block;
+}
 
 .dropdown-content a {
   font-size: 20px;
@@ -221,10 +243,17 @@ nav a {
   padding: 9px 36px;
   display: block;
 }
+.dropdown-content2 a:hover {
+  background-color: #ddd;
+}
 
-.dropdown-content a:hover {background-color: #ddd;}
-
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
 .dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropdown-content2 {
+  display: block;
+}
 
 @media only screen and (min-width: 700px) {
   .navbar-toggler {
