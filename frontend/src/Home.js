@@ -85,7 +85,7 @@ export default function Home({ match, history }, props) {
                 showIndicators={true}
                 showStatus={false}
                 interval={2000}
-                autoPlay={false}
+                autoPlay={true}
                 infiniteLoop={true}
                 preventMovementUntilSwipeScrollTolerance={false}
                 stopOnHover={false}
