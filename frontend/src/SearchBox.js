@@ -25,7 +25,11 @@ const SearchBox = ({ history }) => {
           className="search-products"
         ></input>
         <button
-          style={{ marginLeft: "0px" }}
+          style={{
+            marginLeft: "0px",
+            borderTopLeftRadius: "0px",
+            borderBottomLeftRadius: "0px",
+          }}
           className="search-button"
           type="submit"
         >

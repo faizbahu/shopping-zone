@@ -2,7 +2,8 @@ import React, { useState, useEffect } from "react";
 import Pagination from "react-js-pagination";
 import "./home.css";
 import Footer from "./Footer.js";
-import { Carousel } from "react-responsive-carousel";
+import Carousel from "./Cari";
+// import { Carousel } from "react-responsive-carousel";
 import { NavLink, Link } from "react-router-dom";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 // import shirt from "./images/f11.jpg";
@@ -13,6 +14,8 @@ import Product from "./Product.js";
 import { listProducts } from "./actions/productActions";
 import { useDispatch, useSelector } from "react-redux";
 import Paginate from "./Paginate";
+import Loader from "./Loader";
+import Message from "./Message.js";
 import ProductPage from "./ProductPage";
 export default function Home({ match, history }, props) {
   const keyword = match.params.keyword;
@@ -35,9 +38,12 @@ export default function Home({ match, history }, props) {
   // const addToCartHandler=()=>{
   //   history.push(`/cart/${match.params._id}`)
   // }
-  function getMultipleRandom(products, num) {
-    const shuffled = [...products].sort(() => 0.5 - Math.random());
+  function getMultipleRandom(film, num) {
+    var film = products.slice(0, 57);
+    const shuffled = film.sort(() => 0.5 - Math.random());
     return shuffled.slice(0, num);
+    // console.log(film);
+    // return film;
   }
 
   // const arr = ['b', 'c', 'a', 'd'];
@@ -61,7 +67,7 @@ export default function Home({ match, history }, props) {
     <React.Fragment>
       {!keyword && (
         <div className="bulb">
-          <div className="categories">
+          {/* <div className="categories">
             <p className="cate">Categories</p>
             <img className="design" src={logo} alt="" />
             <div className="cati-items">
@@ -78,10 +84,23 @@ export default function Home({ match, history }, props) {
                 <h1>Shoes</h1>
               </Link>
             </div>
-          </div>
+          </div> */}
           <div className="top1-div">
+            <div>
+              <h1
+                style={{
+                  textAlign: "center",
+                  fontSize: "43px",
+                  color: "white",
+                  marginRight: "110px",
+                }}
+              >
+                Trending Products
+              </h1>
+            </div>
             <div className="container1">
-              <Carousel
+              <Carousel />
+              {/* <Carousel
                 showIndicators={true}
                 showStatus={false}
                 interval={2000}
@@ -115,33 +134,41 @@ export default function Home({ match, history }, props) {
                     </div>
                   </div>
                 ))}
-              </Carousel>
+              </Carousel> */}
             </div>
           </div>
         </div>
       )}
       <div className="for-products">
         <h1>LATEST PRODUCTS</h1>
-        <div className="listing-products">
-          {getMultipleRandom(products, 20).map((product) => (
-            // {products.map((product) => (
-            <Product product={product} key={product._id} />
-          ))}
-        </div>
-        {/* <Paginate pages={pages} page={page} keyword={keyword ? keyword : ""} /> */}
-        <div className="height">
-          <Pagination
-            activePage={activePage}
-            itemsCountPerPage={3}
-            totalItemsCount={450}
-            pageRangeDisplayed={5}
-            onChange={handlePageChange}
-            prevPageText="PREV"
-            nextPageText="NEXT"
-            // prevPageText={<i class="fa fa-angle-left"></i>}
-            // nextPageText={<i class="fa fa-angle-right"></i>}
-          ></Pagination>
-        </div>
+        {loading ? (
+          <Loader />
+        ) : error ? (
+          <Message variant="danger">{error}</Message>
+        ) : (
+          <>
+            <div className="listing-products">
+              {getMultipleRandom(products, 20).map((product) => (
+                // {products.map((product) => (
+                <Product product={product} key={product._id} />
+              ))}
+            </div>
+            {/* <Paginate pages={pages} page={page} keyword={keyword ? keyword : ""} /> */}
+            <div className="height">
+              <Pagination
+                activePage={activePage}
+                itemsCountPerPage={3}
+                totalItemsCount={450}
+                pageRangeDisplayed={5}
+                onChange={handlePageChange}
+                prevPageText="PREV"
+                nextPageText="NEXT"
+                // prevPageText={<i class="fa fa-angle-left"></i>}
+                // nextPageText={<i class="fa fa-angle-right"></i>}
+              ></Pagination>
+            </div>
+          </>
+        )}
       </div>
       <Footer />
     </React.Fragment>

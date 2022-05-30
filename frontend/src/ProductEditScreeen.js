@@ -280,15 +280,38 @@ export const ProductEditScreen = ({ match, history }) => {
                 onChange={(e) => setCountInStock(e.target.value)}
               />
             </div>
-            <div className="form-group">
-              <label
+            <div
+              style={{
+                alignItems: "center",
+
+                width: "436px",
+                display: "flex",
+                padding: "12px 6px",
+                borderBottom: "2px solid rgb(65, 196, 255)",
+              }}
+              className="form-group"
+            >
+              <h6
                 style={{ color: "white", marginLeft: "6px", fontSize: "17px" }}
                 for="admin"
               >
                 Category
-              </label>
+              </h6>
+              <select
+                onChange={(e) => setCategory(e.target.value)}
+                style={{
+                  color: "black",
+                  marginLeft: "15px",
+                }}
+              >
+                <option>Select</option>
+                <option>Shirts</option>
+                <option>Shoes</option>
+                <option>Mens Jeans</option>
+                <option>Kids Wear</option>
+              </select>
               <br></br>
-              <input
+              {/* <input
                 type="text"
                 style={{
                   padding: "8px 130px 10px 12px",
@@ -307,7 +330,7 @@ export const ProductEditScreen = ({ match, history }) => {
                 value={category}
                 //  checked={isAdmin}
                 onChange={(e) => setCategory(e.target.value)}
-              />
+              /> */}
             </div>
             <div className="form-group">
               <label

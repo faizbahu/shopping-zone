@@ -42,7 +42,7 @@ export const Signin = ({ location, history }) => {
         {/* <Message></Message> */}
         <h3>LOG IN</h3>
         {error && <Message>{error}</Message>}
-        {/* {loading && <Loader />} */}
+        {loading && <Loader />}
         <div className="form-group">
           <i class="zmdi zmdi-email icon-"></i>
           <input
