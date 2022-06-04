@@ -36,7 +36,7 @@ export default function Cari({ match, history }, props) {
       showIndicators={true}
       showStatus={false}
       interval={2000}
-      autoPlay={false}
+      autoPlay={true}
       infiniteLoop={true}
       preventMovementUntilSwipeScrollTolerance={false}
       stopOnHover={false}
@@ -61,7 +61,7 @@ export default function Cari({ match, history }, props) {
               to={`/product/${product._id}`}
             > */}
             {/* <Link to={product.link}> */}
-            <a href={product.link}>
+            <a href={product.link} target="_blank">
               <button className="carting">
                 BUY NOW
                 <i

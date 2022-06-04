@@ -20,13 +20,15 @@ export const Signup = ({ location, history }) => {
   const { loading, error, userInfo } = userRegister;
 
   const redirect = location.search ? location.search.split("=")[1] : "/";
-
+  
+  
   useEffect(() => {
+    
     if (userInfo) {
       history.push(redirect);
     }
   }, [history, userInfo, redirect]);
-
+  //  const set
   const submitHandler = (e) => {
     e.preventDefault();
     if (password != confirmPassword) {
@@ -55,6 +57,7 @@ export const Signup = ({ location, history }) => {
             placeholder="Enter name"
             value={name}
             onChange={(e) => setName(e.target.value)}
+            pattern="[a-zA-Z'-'\s]*"
           />
         </div>
         <div className="form-group">
@@ -108,6 +111,6 @@ export const Signup = ({ location, history }) => {
       </form>
     </div>
   );
-};
+};;
 
 export default Signup;

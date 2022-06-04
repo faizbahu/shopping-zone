@@ -126,6 +126,7 @@ export const ProductEditScreen = ({ match, history }) => {
                 placeholder="Enter name"
                 value={name}
                 onChange={(e) => setName(e.target.value)}
+                pattern="[a-zA-Z'-'\s]*"
               />
             </div>
             <div className="form-group">
@@ -152,6 +153,7 @@ export const ProductEditScreen = ({ match, history }) => {
                 placeholder="Enter price"
                 value={price}
                 onChange={(e) => setPrice(e.target.value)}
+                min="1"
               />
             </div>
 
@@ -276,6 +278,7 @@ export const ProductEditScreen = ({ match, history }) => {
                 placeholder="Enter count in stock"
                 label="Is Admin"
                 value={countInStock}
+                pattern="[1-9]"
                 //  checked={isAdmin}
                 onChange={(e) => setCountInStock(e.target.value)}
               />
@@ -283,7 +286,6 @@ export const ProductEditScreen = ({ match, history }) => {
             <div
               style={{
                 alignItems: "center",
-
                 width: "436px",
                 display: "flex",
                 padding: "12px 6px",
@@ -363,7 +365,7 @@ export const ProductEditScreen = ({ match, history }) => {
             </div>
 
             <Button type="submit" variant="primary">
-              Update
+              Create
             </Button>
             <Button>
               <Link style={{ color: "white" }} to="/admin/productlist">
