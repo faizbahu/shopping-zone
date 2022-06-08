@@ -21,7 +21,7 @@ export default function Cari({ match, history }, props) {
   //   return shuffled.slice(57, film);
   // }
   function getSingleRandom(film, num) {
-    var film = products.slice(84, 88);
+    var film = products.slice(84, 107);
     const shuffled = film.sort(() => 0.5 - Math.random());
     return shuffled.slice(0, num);
     // console.log(film);

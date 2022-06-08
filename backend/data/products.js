@@ -105,7 +105,7 @@ const products = [
       "https://furorjeans.com/media/catalog/product//i/m/img_5834-31528.jpg",
     description:
       "Bluetooth technology lets you connect it with compatible devices wirelessly High-quality AAC audio offers immersive listening experience Built-in microphone allows you to take calls while working",
-    //brand: "Apple",
+    brand: "Local",
     sale: "30%",
     name: "T Shirts For Men Boys New Arrival Fashion",
     price: 2000.0,
@@ -119,7 +119,7 @@ const products = [
       "https://cdn.shopify.com/s/files/1/1963/3741/products/AU4_8152_360x.jpg?v=1629835668",
     description:
       "Bluetooth technology lets you connect it with compatible devices wirelessly High-quality AAC audio offers immersive listening experience Built-in microphone allows you to take calls while working",
-    //brand: "Apple",
+    brand: "Local",
     sale: "20%",
     name: "Basic Round Neck Premium T-Shirt Half Sleeve-For Men",
     price: 2345.0,
@@ -132,7 +132,7 @@ const products = [
     image: "https://m.media-amazon.com/images/I/51L94fAiQ6L._AC_UL320_.jpg ",
     description:
       "Bluetooth technology lets you connect it with compatible devices wirelessly High-quality AAC audio offers immersive listening experience Built-in microphone allows you to take calls while working",
-    //brand: "Apple",
+    brand: "Local",
     sale: "50%",
     name: "Trending Wear Men's Round Neck T-Shirts For Men",
     price: 2584.0,
@@ -145,7 +145,7 @@ const products = [
     image: "https://m.media-amazon.com/images/I/91uYUhgzERL._AC_UL320_.jpg",
     description:
       "Bluetooth technology lets you connect it with compatible devices wirelessly High-quality AAC audio offers immersive listening experience Built-in microphone allows you to take calls while working",
-    //brand: "Apple",
+    brand: "Local",
     sale: "40%",
     name: "Code Checkered Buttoned Down Casual Shirt for Men",
     price: 1500.0,
@@ -158,7 +158,7 @@ const products = [
     image: "https://m.media-amazon.com/images/I/91lOW5SiH1S._AC_UL320_.jpg",
     description:
       "Bluetooth technology lets you connect it with compatible devices wirelessly High-quality AAC audio offers immersive listening experience Built-in microphone allows you to take calls while working",
-    //brand: "Apple",
+    brand: "Local",
     sale: "30%",
     name: "Basic Round Neck Premium T-Shirt Half Sleeve-For Men",
     price: 1834.0,
@@ -171,7 +171,7 @@ const products = [
     image: "https://m.media-amazon.com/images/I/A1wEjvjUA-L._AC_UL320_.jpg",
     description:
       "Bluetooth technology lets you connect it with compatible devices wirelessly High-quality AAC audio offers immersive listening experience Built-in microphone allows you to take calls while working",
-    //brand: "Apple",
+    brand: "Local",
     sale: "10%",
     name: "T Shirts For Men Boys New Arrival Fashion",
     price: 2584.0,
@@ -184,7 +184,7 @@ const products = [
     image: "https://m.media-amazon.com/images/I/81Pzxs6nadL._AC_UL320_.jpg",
     description:
       "Bluetooth technology lets you connect it with compatible devices wirelessly High-quality AAC audio offers immersive listening experience Built-in microphone allows you to take calls while working",
-    //brand: "Apple",
+    brand: "Local",
     sale: "50%",
     name: "Trending Wear Men's Round Neck T-Shirts For Men",
     price: 2331.0,
@@ -198,7 +198,7 @@ const products = [
       "https://furorjeans.com/media/catalog/product//0/n/0n9a7125-31525.jpg",
     description:
       "Bluetooth technology lets you connect it with compatible devices wirelessly High-quality AAC audio offers immersive listening experience Built-in microphone allows you to take calls while working",
-    //brand: "Apple",
+    brand: "Local",
     sale: "40%",
     name: "Code Checkered Buttoned Down Casual Shirt for Men",
     price: 1345.0,
@@ -211,7 +211,7 @@ const products = [
     image: "https://m.media-amazon.com/images/I/61ZTZa5mn2L._AC_UL320_.jpg",
     description:
       "Bluetooth technology lets you connect it with compatible devices wirelessly High-quality AAC audio offers immersive listening experience Built-in microphone allows you to take calls while working",
-    //brand: "Apple",
+    brand: "Local",
     sale: "60%",
     name: "Code Checkered Buttoned Down Casual Shirt for Men",
     price: 1322.0,
@@ -224,7 +224,7 @@ const products = [
     image: "https://m.media-amazon.com/images/I/516-lHPpd0S._AC_UL320_.jpg",
     description:
       "Bluetooth technology lets you connect it with compatible devices wirelessly High-quality AAC audio offers immersive listening experience Built-in microphone allows you to take calls while working",
-    //brand: "Apple",
+    brand: "Local",
     sale: "50%",
     name: "Code Checkered Buttoned Down Casual Shirt for Men",
     price: 2584.0,
@@ -238,7 +238,7 @@ const products = [
       "https://cdn.shopify.com/s/files/1/2290/7887/products/F0021103901_2_cf32b4b2-b0ed-420a-8e8c-c92326c1c0dc_1024x1024.jpg?v=1636027614",
     description:
       "Bluetooth technology lets you connect it with compatible devices wirelessly High-quality AAC audio offers immersive listening experience Built-in microphone allows you to take calls while working",
-    //brand: "Apple",
+    brand: "Local",
     sale: "30%",
     name: "T Shirts For Men Boys New Arrival Fashion",
     price: 1111.0,
@@ -252,7 +252,7 @@ const products = [
       "https://furorjeans.com/media/catalog/product//i/m/img_5729-31512_4.jpg",
     description:
       "Bluetooth technology lets you connect it with compatible devices wirelessly High-quality AAC audio offers immersive listening experience Built-in microphone allows you to take calls while working",
-    //brand: "Apple",
+    brand: "Local",
     sale: "10%",
     name: "Basic Round Neck Premium T-Shirt Half Sleeve-For Men",
     price: 1000.0,
@@ -266,7 +266,7 @@ const products = [
       "https://cdn.shopify.com/s/files/1/2290/7887/products/F0035103305_1_1024x1024.jpg?v=1635064667",
     description:
       "Bluetooth technology lets you connect it with compatible devices wirelessly High-quality AAC audio offers immersive listening experience Built-in microphone allows you to take calls while working",
-    //brand: "Apple",
+    brand: "Local",
     sale: "30%",
     name: "Trending Wear Men's Round Neck T-Shirts For Men",
     price: 1200.0,
@@ -278,7 +278,7 @@ const products = [
     image: "/img/s1.jpg",
     description:
       "Bluetooth technology lets you connect it with compatible devices wirelessly High-quality AAC audio offers immersive listening experience Built-in microphone allows you to take calls while working",
-    //brand: "Apple",
+    brand: "Local",
     sale: "20%",
     name: "LATEST DESIGN RUBBER SHOE FOR MEN",
     price: 2000.0,
@@ -291,7 +291,7 @@ const products = [
     image: "/img/s2.jpg",
     description:
       "Bluetooth technology lets you connect it with compatible devices wirelessly High-quality AAC audio offers immersive listening experience Built-in microphone allows you to take calls while working",
-    //brand: "Apple",
+    brand: "Local",
     sale: "50%",
     name: "Men's casual sports shoes breathable mesh shoes",
     price: 2000.0,
@@ -304,7 +304,7 @@ const products = [
     image: "/img/s3.jpg",
     description:
       "Bluetooth technology lets you connect it with compatible devices wirelessly High-quality AAC audio offers immersive listening experience Built-in microphone allows you to take calls while working",
-    //brand: "Apple",
+    brand: "Local",
     sale: "30%",
     name: "LATEST DESIGN RUBBER SHOE FOR MEN",
     price: 2000.0,
@@ -317,7 +317,7 @@ const products = [
     image: "/img/s4.jpg",
     description:
       "Bluetooth technology lets you connect it with compatible devices wirelessly High-quality AAC audio offers immersive listening experience Built-in microphone allows you to take calls while working",
-    //brand: "Apple",
+    brand: "Local",
     sale: "40%",
     name: "LATEST DESIGN RUBBER SHOE FOR MEN",
     price: 2000.0,
@@ -329,7 +329,7 @@ const products = [
     image: "/img/s5.jpg",
     description:
       "Bluetooth technology lets you connect it with compatible devices wirelessly High-quality AAC audio offers immersive listening experience Built-in microphone allows you to take calls while working",
-    //brand: "Apple",
+    brand: "Local",
     sale: "30%",
     name: "Fabulous sneaker designs for casual boys",
     price: 2000.0,
@@ -341,7 +341,7 @@ const products = [
     image: "/img/s6.jpg",
     description:
       "Bluetooth technology lets you connect it with compatible devices wirelessly High-quality AAC audio offers immersive listening experience Built-in microphone allows you to take calls while working",
-    //brand: "Apple",
+    brand: "Local",
     sale: "20%",
     name: "M.K Soft - Black Comfortable Men's Shoes",
     price: 2000.0,
@@ -353,7 +353,7 @@ const products = [
     image: "/img/s7.jpg",
     description:
       "Bluetooth technology lets you connect it with compatible devices wirelessly High-quality AAC audio offers immersive listening experience Built-in microphone allows you to take calls while working",
-    //brand: "Apple",
+    brand: "Local",
     sale: "30%",
     name: "Men's casual sports shoes breathable mesh shoes",
     price: 2000.0,
@@ -365,7 +365,7 @@ const products = [
     image: "/img/s8.jpg",
     description:
       "Bluetooth technology lets you connect it with compatible devices wirelessly High-quality AAC audio offers immersive listening experience Built-in microphone allows you to take calls while working",
-    //brand: "Apple",
+    brand: "Local",
     sale: "50%",
     name: "Blue Importia Synthetic Leather Loafer Shoes For Men",
     price: 2000.0,
@@ -377,7 +377,7 @@ const products = [
     image: "/img/s9.jpg",
     description:
       "Bluetooth technology lets you connect it with compatible devices wirelessly High-quality AAC audio offers immersive listening experience Built-in microphone allows you to take calls while working",
-    //brand: "Apple",
+    brand: "Local",
     sale: "70%",
     name: "M.K Soft - Black Comfortable Men's Shoes",
     price: 2000.0,
@@ -389,7 +389,7 @@ const products = [
     image: "/img/s10.jpg",
     description:
       "Bluetooth technology lets you connect it with compatible devices wirelessly High-quality AAC audio offers immersive listening experience Built-in microphone allows you to take calls while working",
-    //brand: "Apple",
+    brand: "Local",
     sale: "80%",
     name: "Men's casual sports shoes breathable mesh shoes",
     price: 2000.0,
@@ -401,7 +401,7 @@ const products = [
     image: "/img/s11.jpg",
     description:
       "Bluetooth technology lets you connect it with compatible devices wirelessly High-quality AAC audio offers immersive listening experience Built-in microphone allows you to take calls while working",
-    //brand: "Apple",
+    brand: "Local",
     sale: "30%",
     name: "Fabulous sneaker designs for casual boys",
     price: 2000.0,
@@ -413,7 +413,7 @@ const products = [
     image: "/img/s12.jpg",
     description:
       "Bluetooth technology lets you connect it with compatible devices wirelessly High-quality AAC audio offers immersive listening experience Built-in microphone allows you to take calls while working",
-    //brand: "Apple",
+    brand: "Local",
     sale: "60%",
     name: "Blue Importia Synthetic Leather Loafer Shoes For Men",
     price: 2000.0,
@@ -425,7 +425,7 @@ const products = [
     image: "/img/s13.jpg",
     description:
       "Bluetooth technology lets you connect it with compatible devices wirelessly High-quality AAC audio offers immersive listening experience Built-in microphone allows you to take calls while working",
-    //brand: "Apple",
+    brand: "Local",
     sale: "10%",
     name: "M.K Soft - Black Comfortable Men's Shoes",
     price: 2000.0,
@@ -437,7 +437,7 @@ const products = [
     image: "/img/s14.jpg",
     description:
       "Bluetooth technology lets you connect it with compatible devices wirelessly High-quality AAC audio offers immersive listening experience Built-in microphone allows you to take calls while working",
-    //brand: "Apple",
+    brand: "Local",
     sale: "20%",
     name: "Men's casual sports shoes breathable mesh shoes",
     price: 2000.0,
@@ -449,7 +449,7 @@ const products = [
     image: "/img/s13.jpg",
     description:
       "Bluetooth technology lets you connect it with compatible devices wirelessly High-quality AAC audio offers immersive listening experience Built-in microphone allows you to take calls while working",
-    //brand: "Apple",
+    brand: "Local",
     sale: "30%",
     name: "Blue Importia Synthetic Leather Loafer Shoes For Men",
     price: 2000.0,
@@ -461,7 +461,7 @@ const products = [
     image: "/img/s10.jpg",
     description:
       "Bluetooth technology lets you connect it with compatible devices wirelessly High-quality AAC audio offers immersive listening experience Built-in microphone allows you to take calls while working",
-    //brand: "Apple",
+    brand: "Local",
     sale: "30%",
     name: "Blue Importia Synthetic Leather Loafer Shoes For Men",
     price: 2000.0,
@@ -573,7 +573,7 @@ const products = [
     image: "/img/k1.jpg",
     description:
       "Bluetooth technology lets you connect it with compatible devices wirelessly High-quality AAC audio offers immersive listening experience Built-in microphone allows you to take calls while working",
-    //brand: "Apple",
+    brand: "Local",
     sale: "30%",
     name: "Kids T shirt - Cotton T shirt - Customize T shirt",
     price: 2000.0,
@@ -585,7 +585,7 @@ const products = [
     image: "/img/k2.jpg",
     description:
       "Bluetooth technology lets you connect it with compatible devices wirelessly High-quality AAC audio offers immersive listening experience Built-in microphone allows you to take calls while working",
-    //brand: "Apple",
+    brand: "Local",
     sale: "50%",
     name: "New Collection Kids T Shirts Only",
     price: 2000.0,
@@ -597,7 +597,7 @@ const products = [
     image: "/img/k3.jpg",
     description:
       "Bluetooth technology lets you connect it with compatible devices wirelessly High-quality AAC audio offers immersive listening experience Built-in microphone allows you to take calls while working",
-    //brand: "Apple",
+    brand: "Local",
     sale: "60%",
     name: "High Quality Stylish t Shirts for Kids Boys Round Neck",
     price: 2000.0,
@@ -609,7 +609,7 @@ const products = [
     image: "/img/k4.jpg",
     description:
       "Bluetooth technology lets you connect it with compatible devices wirelessly High-quality AAC audio offers immersive listening experience Built-in microphone allows you to take calls while working",
-    //brand: "Apple",
+    brand: "Local",
     sale: "40%",
     name: "High Quality Stylish t Shirts for Kids Boys Round Neck",
     price: 2000.0,
@@ -621,7 +621,7 @@ const products = [
     image: "/img/k5.jpg",
     description:
       "Bluetooth technology lets you connect it with compatible devices wirelessly High-quality AAC audio offers immersive listening experience Built-in microphone allows you to take calls while working",
-    //brand: "Apple",
+    brand: "Local",
     sale: "30%",
     name: "Kids T shirt - Cotton T shirt - Customize T shirt",
     price: 2000.0,
@@ -633,7 +633,7 @@ const products = [
     image: "/img/k6.jpg",
     description:
       "Bluetooth technology lets you connect it with compatible devices wirelessly High-quality AAC audio offers immersive listening experience Built-in microphone allows you to take calls while working",
-    //brand: "Apple",
+    brand: "Local",
     sale: "30%",
     name: "High Quality Stylish t Shirts for Kids Boys Round Neck",
     price: 2000.0,
@@ -645,7 +645,7 @@ const products = [
     image: "/img/k7.jpg",
     description:
       "Bluetooth technology lets you connect it with compatible devices wirelessly High-quality AAC audio offers immersive listening experience Built-in microphone allows you to take calls while working",
-    //brand: "Apple",
+    brand: "Local",
     sale: "30%",
     name: "New Collection Kids T Shirts Only",
     price: 2000.0,
@@ -657,7 +657,7 @@ const products = [
     image: "/img/k8.jpg",
     description:
       "Bluetooth technology lets you connect it with compatible devices wirelessly High-quality AAC audio offers immersive listening experience Built-in microphone allows you to take calls while working",
-    //brand: "Apple",
+    brand: "Local",
     sale: "30%",
     name: "Kids T shirt - Cotton T shirt - Customize T shirt",
     price: 2000.0,
@@ -669,7 +669,7 @@ const products = [
     image: "/img/k9.jpg",
     description:
       "Bluetooth technology lets you connect it with compatible devices wirelessly High-quality AAC audio offers immersive listening experience Built-in microphone allows you to take calls while working",
-    //brand: "Apple",
+    brand: "Local",
     sale: "50%",
     name: "High Quality Stylish t Shirts for Kids Boys Round Neck",
     price: 2000.0,
@@ -681,7 +681,7 @@ const products = [
     image: "/img/k10.jpg",
     description:
       "Bluetooth technology lets you connect it with compatible devices wirelessly High-quality AAC audio offers immersive listening experience Built-in microphone allows you to take calls while working",
-    //brand: "Apple",
+    brand: "Local",
     sale: "70%",
     name: "New Collection Kids T Shirts Only",
     price: 2000.0,
@@ -693,7 +693,7 @@ const products = [
     image: "/img/k4.jpg",
     description:
       "Bluetooth technology lets you connect it with compatible devices wirelessly High-quality AAC audio offers immersive listening experience Built-in microphone allows you to take calls while working",
-    //brand: "Apple",
+    brand: "Local",
     sale: "30%",
     name: "Kids T shirt - Cotton T shirt - Customize T shirt",
     price: 2000.0,
@@ -705,7 +705,7 @@ const products = [
     image: "/img/k9.jpg",
     description:
       "Bluetooth technology lets you connect it with compatible devices wirelessly High-quality AAC audio offers immersive listening experience Built-in microphone allows you to take calls while working",
-    //brand: "Apple",
+    brand: "Local",
     sale: "30%",
     name: "High Quality Stylish t Shirts for Kids Boys Round Neck",
     price: 2000.0,
@@ -717,7 +717,7 @@ const products = [
     image: "/img/k2.jpg",
     description:
       "Bluetooth technology lets you connect it with compatible devices wirelessly High-quality AAC audio offers immersive listening experience Built-in microphone allows you to take calls while working",
-    //brand: "Apple",
+    brand: "Local",
     sale: "20%",
     name: "New Collection Kids T Shirts Only",
     price: 2000.0,
@@ -729,7 +729,7 @@ const products = [
     image: "/img/k6.jpg",
     description:
       "Bluetooth technology lets you connect it with compatible devices wirelessly High-quality AAC audio offers immersive listening experience Built-in microphone allows you to take calls while working",
-    //brand: "Apple",
+    brand: "Local",
     sale: "50%",
     name: "Kids T shirt - Cotton T shirt - Customize T shirt",
     price: 2000.0,
@@ -844,7 +844,7 @@ const products = [
   //     "https://m.media-amazon.com/images/I/71EHukNHMmL._AC_UL480_FMwebp_QL65_.jpg",
   //   description:
   //     "Bluetooth technology lets you connect it with compatible devices wirelessly High-quality AAC audio offers immersive listening experience Built-in microphone allows you to take calls while working",
-  //   //brand: "Apple",
+  //   brand: "Local",
   //   sale: "50%",
   //   name: "Fabulous sneaker designs for casual boys",
   //   price: 2000.0,
@@ -857,7 +857,7 @@ const products = [
     image: "https://m.media-amazon.com/images/I/71jozaRAq3S._AC_UL320_.jpg",
     description:
       "Bluetooth technology lets you connect it with compatible devices wirelessly High-quality AAC audio offers immersive listening experience Built-in microphone allows you to take calls while working",
-    //brand: "Apple",
+    brand: "Local",
     sale: "30%",
     name: "Cut Price Stretchable Jeans for Men Plain JET BLACK",
     price: 2000.0,
@@ -869,7 +869,7 @@ const products = [
     image: "https://m.media-amazon.com/images/I/81DvqFoODRL._AC_UL320_.jpg",
     description:
       "Bluetooth technology lets you connect it with compatible devices wirelessly High-quality AAC audio offers immersive listening experience Built-in microphone allows you to take calls while working",
-    //brand: "Apple",
+    brand: "Local",
     sale: "30%",
     name: "Lucky Brand Men's 181 Relaxed Straight Jean",
     price: 2000.0,
@@ -881,7 +881,7 @@ const products = [
     image: "https://m.media-amazon.com/images/I/81jVjk1wmyL._AC_UL320_.jpg",
     description:
       "Bluetooth technology lets you connect it with compatible devices wirelessly High-quality AAC audio offers immersive listening experience Built-in microphone allows you to take calls while working",
-    //brand: "Apple",
+    brand: "Local",
     sale: "30%",
     name: "Lucky Brand Men's 181 Relaxed Straight Jean",
     price: 2000.0,
@@ -893,7 +893,7 @@ const products = [
     image: "https://m.media-amazon.com/images/I/71pHQ8klnvL._AC_UL320_.jpg",
     description:
       "Bluetooth technology lets you connect it with compatible devices wirelessly High-quality AAC audio offers immersive listening experience Built-in microphone allows you to take calls while working",
-    //brand: "Apple",
+    brand: "Local",
     sale: "30%",
     name: "Cut Price Stretchable Jeans for Men Plain JET BLACK",
     price: 2000.0,
@@ -905,7 +905,7 @@ const products = [
     image: "https://m.media-amazon.com/images/I/71mTic1TgwL._AC_UL320_.jpg",
     description:
       "Bluetooth technology lets you connect it with compatible devices wirelessly High-quality AAC audio offers immersive listening experience Built-in microphone allows you to take calls while working",
-    //brand: "Apple",
+    brand: "Local",
     sale: "50%",
     name: "Rock & Republic Men's Slim Straight Jean",
     price: 2000.0,
@@ -917,7 +917,7 @@ const products = [
     image: "https://m.media-amazon.com/images/I/81apCl-e6qS._AC_UL320_.jpg",
     description:
       "Bluetooth technology lets you connect it with compatible devices wirelessly High-quality AAC audio offers immersive listening experience Built-in microphone allows you to take calls while working",
-    //brand: "Apple",
+    brand: "Local",
     sale: "70%",
     name: "Lucky Brand Men's 181 Relaxed Straight Jean",
     price: 2000.0,
@@ -929,7 +929,7 @@ const products = [
     image: "https://m.media-amazon.com/images/I/71mTic1TgwL._AC_UL320_.jpg",
     description:
       "Bluetooth technology lets you connect it with compatible devices wirelessly High-quality AAC audio offers immersive listening experience Built-in microphone allows you to take calls while working",
-    //brand: "Apple",
+    brand: "Local",
     sale: "60%",
     name: "Wrangler Men's Trail Trekker Relaxed Fit",
     price: 2000.0,
@@ -941,7 +941,7 @@ const products = [
     image: "https://m.media-amazon.com/images/I/81DvqFoODRL._AC_UL320_.jpg",
     description:
       "Bluetooth technology lets you connect it with compatible devices wirelessly High-quality AAC audio offers immersive listening experience Built-in microphone allows you to take calls while working",
-    //brand: "Apple",
+    brand: "Local",
     sale: "70%",
     name: "Rock & Republic Men's Slim Straight Jean",
     price: 2000.0,
@@ -953,7 +953,7 @@ const products = [
     image: "https://m.media-amazon.com/images/I/81OCJuG-BXL._AC_UL320_.jpg",
     description:
       "Bluetooth technology lets you connect it with compatible devices wirelessly High-quality AAC audio offers immersive listening experience Built-in microphone allows you to take calls while working",
-    //brand: "Apple",
+    brand: "Local",
     sale: "50%",
     name: "Nautica Men's 5 Pocket Relaxed Fit Stretch Jean",
     price: 2000.0,
@@ -965,7 +965,7 @@ const products = [
     image: "https://m.media-amazon.com/images/I/71mTic1TgwL._AC_UL320_.jpg",
     description:
       "Bluetooth technology lets you connect it with compatible devices wirelessly High-quality AAC audio offers immersive listening experience Built-in microphone allows you to take calls while working",
-    //brand: "Apple",
+    brand: "Local",
     sale: "30%",
     name: "Wrangler Men's Trail Trekker Relaxed Fit",
     price: 2000.0,
@@ -977,7 +977,7 @@ const products = [
     image: "https://m.media-amazon.com/images/I/81OCJuG-BXL._AC_UL320_.jpg",
     description:
       "Bluetooth technology lets you connect it with compatible devices wirelessly High-quality AAC audio offers immersive listening experience Built-in microphone allows you to take calls while working",
-    ////brand: "Apple",
+    brand: "Local",
     sale: "30%",
     name: "Nautica Men's 5 Pocket Relaxed Fit Stretch Jean",
     price: 2000.0,
@@ -989,7 +989,7 @@ const products = [
     image: "https://m.media-amazon.com/images/I/81DvqFoODRL._AC_UL320_.jpg",
     description:
       "Bluetooth technology lets you connect it with compatible devices wirelessly High-quality AAC audio offers immersive listening experience Built-in microphone allows you to take calls while working",
-    // //brand: "Apple",
+    brand: "Local",
     sale: "30%",
     name: "Rock & Republic Men's Slim Straight Jean",
     price: 2000.0,
@@ -1001,7 +1001,7 @@ const products = [
     image: "https://m.media-amazon.com/images/I/71mTic1TgwL._AC_UL320_.jpg",
     description:
       "Bluetooth technology lets you connect it with compatible devices wirelessly High-quality AAC audio offers immersive listening experience Built-in microphone allows you to take calls while working",
-    // //brand: "Apple",
+    brand: "Local",
     sale: "30%",
     name: "Nautica Men's 5 Pocket Relaxed Fit Stretch Jean",
     price: 2000.0,
@@ -1013,7 +1013,7 @@ const products = [
     image: "https://m.media-amazon.com/images/I/81OCJuG-BXL._AC_UL320_.jpg",
     description:
       "Bluetooth technology lets you connect it with compatible devices wirelessly High-quality AAC audio offers immersive listening experience Built-in microphone allows you to take calls while working",
-    // //brand: "Apple",
+    brand: "Local",
     sale: "30%",
     name: "Rock & Republic Men's Slim Straight Jean",
     price: 2000.0,
@@ -1028,6 +1028,7 @@ const products = [
       "https://cdn.shopify.com/s/files/1/2290/7887/products/F0034112901_1_1200x_9716c592-3b80-4042-bf51-87fb6cd0a7fa_1200x.jpg?v=1650257576",
     description: "High quality air cushion sole sneakers",
     brand: "Outfitters",
+    rating: "4.5",
     price: 8990.0,
     link: "https://outfitters.com.pk/collections/new-men/products/f0034-112?color=multi-color&variant=41519162622143",
   },
@@ -1038,6 +1039,7 @@ const products = [
       "https://cdn.shopify.com/s/files/1/2290/7887/products/F0184103813_3_1200x.jpg?v=1653499988",
     description: "High quality air cushion shirt",
     brand: "Outfitters",
+    rating: "2.5",
     price: 3290.0,
     link: "https://outfitters.com.pk/collections/new-men/products/f0184-103?color=ivory&variant=41595173732543",
   },
@@ -1048,6 +1050,7 @@ const products = [
       "https://cdn.shopify.com/s/files/1/2290/7887/products/F0217106901_2_1200x.jpg?v=1652360781",
     description: "High quality air cushion shirt",
     brand: "Outfitters",
+    rating: "5",
     price: 1690.0,
     link: "https://outfitters.com.pk/collections/new-men/products/f0217-106?color=lilac&variant=41492097007807",
   },
@@ -1058,8 +1061,240 @@ const products = [
       "https://cdn.shopify.com/s/files/1/2290/7887/products/F0184103714_2_86b0e257-14a8-40f1-80ae-19bb5dcb2ab9_1200x.jpg?v=1653499988",
     description: "High quality air cushion sole shirt",
     brand: "Outfitters",
+    rating: "1.5",
     price: 3290.0,
     link: "https://outfitters.com.pk/collections/new-men/products/f0184-103?color=sea-green&variant=41595173601471",
+  },
+  {
+    name: "SMART SHIRT GREY SELF",
+    category: "Shirts",
+    image:
+      "https://cdn.shopify.com/s/files/1/0419/6171/7922/products/DSC04776_540x.jpg?v=1654340567",
+    description: "SELF TEXTURED FABRIC",
+    brand: "Charcoal",
+    rating: "3",
+    price: 2796.5,
+    link: "https://charcoal.com.pk/collections/smart-shirts/products/smart-shirt-grey-self",
+  },
+  {
+    name: "SMART SHIRT BROWN",
+    category: "Shirts",
+    image:
+      "https://cdn.shopify.com/s/files/1/0419/6171/7922/products/DSC04580_540x.jpg?v=1654340501",
+    description: "POLO FABRIC",
+    brand: "Charcoal",
+    rating: "2",
+    price: 2446.5,
+    link: "https://charcoal.com.pk/collections/smart-shirts/products/smart-shirt-brown-2",
+  },
+
+  {
+    name: "CLASSIC POLO OLIVE",
+    category: "Shirts",
+    image:
+      "https://cdn.shopify.com/s/files/1/0419/6171/7922/products/DSC00081_fdcd7dea-f574-497e-bc13-a27c46a970b7_540x.jpg?v=1654337640",
+    description: "SPECIAL JACQUARD FABRIC",
+    brand: "Charcoal",
+    rating: "4.5",
+    price: 2950.0,
+    link: "https://charcoal.com.pk/collections/polo-tees/products/classic-polo-olive",
+  },
+
+  {
+    name: "CLASSIC MAROON POLO",
+    category: "Shirts",
+    image:
+      "https://cdn.shopify.com/s/files/1/0419/6171/7922/products/DSC09434_0f42195e-e8be-4573-b496-b6d5de259bf8_540x.jpg?v=1654337596",
+    description: "PLAIN COLLAR",
+    brand: "Charcoal",
+    rating: "2.5",
+    price: 2695.0,
+    link: "https://charcoal.com.pk/collections/polo-tees/products/classic-maroon-polo-1",
+  },
+
+  {
+    name: "PRINTED T SHIRT BLUE",
+    category: "Shirts",
+    image:
+      "https://cdn.shopify.com/s/files/1/0419/6171/7922/products/DSC04363_540x.jpg?v=1654339349",
+    description: "ROUND NECK",
+    brand: "Charcoal",
+    rating: "3.5",
+    price: 1895.0,
+    link: "https://charcoal.com.pk/collections/polo-tees/products/printed-t-shirt-blue",
+  },
+  {
+    name: "STRETCH SLIM FIT DENIM",
+    category: "Jeans",
+    image:
+      "https://cdn.shopify.com/s/files/1/0202/5884/8822/products/22SMD240-BLK_1_1024x1024.jpg?v=1645513959",
+    description: "",
+    brand: "Breakout",
+    rating: "2.5",
+    price: 2309.0,
+    link: "https://breakout.com.pk/collections/men-denim/products/22smd240-blk",
+  },
+  {
+    name: "STRETCH CROPPED FIT DENIM",
+    category: "Jeans",
+    image:
+      "https://cdn.shopify.com/s/files/1/0202/5884/8822/products/22SMD241-BLU_1_1024x1024.jpg?v=1645187932",
+    description: "",
+    brand: "Breakout",
+    rating: "3",
+    price: 2309.0,
+    link: "https://breakout.com.pk/collections/men-denim/products/22smd241-blu",
+  },
+  {
+    name: "KNIT TRAINERS",
+    category: "Shoes",
+    image:
+      "https://cdn.shopify.com/s/files/1/0202/5884/8822/products/22SSH064-GRN_4_1024x1024.jpg?v=1646478784",
+    description: "",
+    brand: "Breakout",
+    rating: "5",
+    price: 4549.0,
+    link: "https://breakout.com.pk/collections/men-shoes/products/22ssh064-grn",
+  },
+  // {
+  //   name: "Blue Chambray Shirt",
+  //   category: "Kids Wear",
+  //   image:
+  //     "https://www.ilovehopscotch.com/static/version1654253288/frontend/Venustheme/ishop/en_US/images/loader-1.gif",
+  //   description:
+  //     "Graceful styles and colors make an attractive casual to semi-formal look. This shirt has a front pocket and inner collar contrast detailing to add to the look. – Machine wash cold – 100% Cotton",
+  //   brand: "Hopscotch",
+  //   price: 1195.0,
+  //   link: "https://www.ilovehopscotch.com/mini-boy/blue-chambray-shirt.html",
+  // },
+
+  {
+    name: "Sky Blue Check Shirt",
+    category: "Kids Wear",
+    image:
+      "https://www.ilovehopscotch.com/media/catalog/product/cache/5f32ed223050af915913bcfbabcc16cc/image/38890f6e3/product-name-h017-abwsh-027.jpg",
+    description:
+      "Reality Check: He looks the cutest in check! This full sleeves checkered button down shirt is made with the finest cotton that is smooth on his skin and is super comfortable for playdays. -100% cotton -Machine wash cold",
+    brand: "Hopscotch",
+    rating: "5",
+    price: 1463.0,
+    link: "https://www.ilovehopscotch.com/sky-blue-check-shirt.html",
+  },
+  {
+    name: "Blue Ripped Jeans",
+    category: "Kids Wear",
+    image:
+      "https://www.ilovehopscotch.com/media/catalog/product/cache/5f32ed223050af915913bcfbabcc16cc/image/425432e38/product-name-h017-sp-abdjn-007.jpg",
+    description:
+      "Keep it simple (and comfortable), keep it denim! This straight fit jeans with adjustable waist is all you need for a memorable playtime. It comes with a ripped effect for extra style.  -Denim -Adjustable waist -Machine wash cold",
+    brand: "Hopscotch",
+    rating: "3",
+    price: 1990.0,
+    link: "https://www.ilovehopscotch.com/blue-ripped-jeans.html",
+  },
+  {
+    name: "Briggs PT Oxford",
+    category: "Shoes",
+    image:
+      "https://cdn.shopify.com/s/files/1/0016/0074/9623/products/HPM-HM02169-007-081120-F21-000.jpg?v=1652512180",
+    description:
+      "The Briggs PT Oxford is jampacked with eco-friendly comfort features, starting with our built-in Bounce™ Eco footbed, that provides comfy cushioning and extra.",
+    brand: "Hush Puppies",
+    rating: "5",
+    price: 15999.0,
+    link: "https://www.hushpuppies.com.pk/collections/sneakers/products/briggs-pt-oxford",
+  },
+  {
+    name: "Hester Spel",
+    category: "Shoes",
+    image:
+      "https://cdn.shopify.com/s/files/1/0016/0074/9623/products/IMG_5959.jpg?v=1636458498",
+    description: "",
+    brand: "Hush Puppies",
+    rating: "2",
+    price: 3995.0,
+    link: "https://www.hushpuppies.com.pk/collections/sneakers/products/hester-spel",
+  },
+  {
+    name: "EVERYDAY RUNNING SHOES FOR MEN",
+    category: "Shoes",
+    image:
+      "https://cdn.shopify.com/s/files/1/0371/5416/0772/products/5_4d258906-cf48-4278-845e-d3e8a131658a.jpg?v=1630992290",
+    description: "Get active in these Everyday Running Shoes for Men by Ndure",
+    brand: "Ndure",
+    rating: "1.5",
+    price: 1250.0,
+    link: "https://www.ndure.com/collections/sale/products/everyday-running-shoes-for-men-m-pr-osc-0010-black?variant=36775032225960",
+  },
+  {
+    name: "LACE-UP CASUAL SHOE",
+    category: "Shoes",
+    image:
+      "https://cdn.shopify.com/s/files/1/0371/5416/0772/products/3_0da518e8-b54c-4feb-b1ca-371581c3bfd0.jpg?v=1629452586",
+    description: "Style up in these Lace-Up Casual Shoes for Men by Ndure.",
+    brand: "Ndure",
+    rating: "4.5",
+    price: 1250.0,
+    link: "https://www.ndure.com/collections/sale/products/lace-up-athletic-shoes-for-men-m-pr-osc-0011-black?variant=36775031767208",
+  },
+  {
+    name: "FLEXIBLE ATHLETIC SHOE",
+    category: "Shoes",
+    image:
+      "https://cdn.shopify.com/s/files/1/0371/5416/0772/products/3_4796a4ca-bd18-4cd7-abcd-d081d6feaefc.jpg?v=1631765720",
+    description:
+      "These flexible Athletic Shoes by Ndure are shaped for comfort and built for movement.",
+    brand: "Ndure",
+    rating: "3.5",
+    price: 1959.0,
+    link: "https://www.ndure.com/collections/sale/products/flexible-athletic-shoe-m-pr-vel-0011-gry-blk?variant=41039266676904",
+  },
+  {
+    name: "CASUAL MENS SNEAKERS",
+    category: "Shoes",
+    image:
+      "https://cdn.shopify.com/s/files/1/0371/5416/0772/products/1_9ef7de5e-2ab9-4292-b0a4-8696b5dc41d0.jpg?v=1628580743",
+    description: "Lets get comfortable in these casual sneakers by Ndure",
+    brand: "Ndure",
+    rating: "3.5",
+    price: 1749.0,
+    link: "https://www.ndure.com/collections/sale/products/casual-mens-sneakers-m-sn-bra-0001-blue?variant=37624547573928",
+  },
+  {
+    name: "FLEXIBLE ATHLETIC SHOE",
+    category: "Shoes",
+    image:
+      "https://cdn.shopify.com/s/files/1/0371/5416/0772/products/4_9c8cf3d5-e3d2-42af-93ea-70d0953618fc.jpg?v=1631765698",
+    description:
+      "These flexible Athletic Shoes by Ndure are shaped for comfort and built for movement.",
+    brand: "Ndure",
+    rating: "5",
+    price: 1959.0,
+    link: "https://www.ndure.com/collections/sale/products/flexible-athletic-shoe-m-pr-vel-0011-blu-yel?variant=41039266119848",
+  },
+  {
+    name: "BOYS CANVAS SHOES",
+    category: "Kids Wear",
+    image:
+      "https://cdn.shopify.com/s/files/1/0371/5416/0772/products/IMG_1232.jpg?v=1635400702",
+    description:
+      "These Boys' Canvas Shoes by Ndure are perfect for your child's comfortable and active lifestyle. Crafted carefully to take care of your child's running, walking and jumping around with style.",
+    brand: "Ndure",
+    rating: "2.5",
+    price: 900.0,
+    link: "https://www.ndure.com/collections/sale/products/boys-canvas-shoes-b-sn-ast-0006-navy?variant=41110342828200",
+  },
+  {
+    name: "ATHLETIC SHOES FOR MEN",
+    category: "Shoes",
+    image:
+      "https://cdn.shopify.com/s/files/1/0371/5416/0772/products/3_9c377724-e5e2-462b-bd2c-834547421c52.jpg?v=1628582047",
+    description:
+      "For all the gym enthusiasts out there these Athletic Shoes for Men by Ndure are made for you",
+    brand: "Ndure",
+    rating: "5",
+    price: 1599.0,
+    link: "https://www.ndure.com/collections/sale/products/athletic-shoes-for-men-m-pr-leo-0002-blue?variant=36787343327400",
   },
 ];
 export default products;

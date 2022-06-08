@@ -201,6 +201,7 @@ export const ProductEditScreen = ({ match, history }) => {
                   // display: "none",
                 }}
                 type="file"
+                accept="image/x-png,image/jpeg,image/jpg"
                 id="image-file"
                 onChange={uploadFileHandler}
               />

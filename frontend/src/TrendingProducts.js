@@ -21,7 +21,7 @@ export default function TrendingProducts(props) {
   }, []);
   //   var num = 56;
   function getMultipleRandom(film, num) {
-    var film = products.slice(84, 88);
+    var film = products.slice(84, 100);
     const shuffled = film.sort(() => 0.5 - Math.random());
     return shuffled.slice(0, num);
   }
@@ -37,7 +37,7 @@ export default function TrendingProducts(props) {
           <div className="for-products">
             <div className="listing-products">
               {/* {filmt.map((product) => ( */}
-              {getMultipleRandom(products, 4).map((product) => (
+              {getMultipleRandom(products, 20).map((product) => (
                 <Link
                   activeClassName="is-active"
                   className="nav-link"
