@@ -53,7 +53,6 @@ export const Signup = ({ location, history }) => {
           <i class="zmdi zmdi-account icon-"></i>
           <input
             type="name"
-            className="form-control"
             placeholder="Enter name"
             value={name}
             onChange={(e) => setName(e.target.value)}
