@@ -109,7 +109,8 @@ const Placeorder = ({ history }) => {
           </div>
           <div>{error && <Message variant="danger">{error}</Message>}</div>
           <button
-            className="checkout2"
+            className="checkout21"
+            // style={{ background: "#03a9f4" }}
             disabled={cart.cartItems == 0}
             onClick={placeOrderHandler}
           >

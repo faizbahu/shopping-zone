@@ -73,7 +73,7 @@ const ProductListScreen = ({ history, match }) => {
         style={{ paddingTop: "71px", paddingBottom: "65px" }}
         className="for-center"
       >
-        <div className="sections">
+        <div style={{ marginLeft: "0px" }} className="sections">
           <div style={{ justifyContent: "space-between", display: "flex" }}>
             <h1>Products</h1>
             <button
@@ -118,7 +118,12 @@ const ProductListScreen = ({ history, match }) => {
                     >
                       {product._id}
                     </td>
-                    <td style={{ borderRight: "1px solid #41c4ff" }}>
+                    <td
+                      style={{
+                        borderRight: "1px solid #41c4ff",
+                        width: "300px",
+                      }}
+                    >
                       {product.name}
                     </td>
                     <td style={{ borderRight: "1px solid #41c4ff" }}>
@@ -130,7 +135,12 @@ const ProductListScreen = ({ history, match }) => {
                     <td style={{ borderRight: "1px solid #41c4ff" }}>
                       {product.brand}
                     </td>
-                    <td style={{ borderRight: "1px solid #41c4ff" }}>
+                    <td
+                      style={{
+                        borderRight: "1px solid #41c4ff",
+                        display: "flex",
+                      }}
+                    >
                       <Link to={`/admin/product/${product._id}/edit`}>
                         <button className="details">
                           <i

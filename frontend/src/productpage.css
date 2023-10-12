@@ -72,6 +72,8 @@ a {
   padding: 25px 15px;
   font-size: 15px;
   font-weight: 500;
+  text-align: initial;
+    margin-left: 190px;
 }
 .price-table {
   display: flex;

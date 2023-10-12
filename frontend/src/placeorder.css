@@ -59,25 +59,28 @@
 }
 
 .order {
-    border: 1px solid #00000054;
+    /* border: 1px solid rgb(65, 196, 255); */
     height: fit-content;
     color: white;
 }
 
 .order h3 {
     font-size: 26px;
-    border-bottom: 1px solid #00000054;
+    border-bottom: 1px solid rgb(65, 196, 255);
     padding: 15px 33px;
     color: white;
+    border: 1px solid rgb(65, 196, 255);
 }
 
 .order2 {
     font-size: 28px;
-    border-bottom: 1px solid #00000054;
+    border-bottom: 1px solid rgb(65, 196, 255);
     padding: 15px 29px;
     display: flex;
     justify-content: space-between;
     color: white;
+    border-left: 1px solid rgb(65, 196, 255);
+        border-right: 1px solid rgb(65, 196, 255);
 }
 
 .order2 h1 {
@@ -90,13 +93,31 @@
     color: white;
 }
 
-.checkout2 {
-    border: none;
-    background: #ff6e87;
-    padding: 12px 34px;
-    font-size: 19px;
+.checkout21,
+.checkout23 {
+    /* border: none; */
+    /* background: #ff6e87; */
+    background: none;
+    padding: 11px 34px;
+    font-size: 23px;
     font-weight: 600;
     width: -webkit-fill-available;
     cursor: pointer;
     color: white;
+    border: 2px solid rgb(65, 196, 255);
+    }
+    
+    .checkout21:hover {
+        background: #03a9f4;
+        transition: all 0.2s ease-in-out;
+    }
+    
+    .checkout23:hover {
+        background: #03a9f4;
+        transition: all 0.2s ease-in-out;
+    }
+    
+    .checkout2:hover {
+        background: #ef3675;
+        transition: all 0.2s ease-in-out;
 }

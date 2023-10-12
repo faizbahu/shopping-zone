@@ -199,7 +199,10 @@ const Order = ({ match, history }) => {
             </div>
           </div>
 
-          <div className="order">
+          <div
+            style={{ border: "1px solid rgb(65, 196, 255)" }}
+            className="order"
+          >
             <h3>ORDER SUMMARY</h3>
             <div className="order2">
               <h1>Items</h1>
@@ -236,7 +239,7 @@ const Order = ({ match, history }) => {
               order.isPaid &&
               !order.isDelivered && (
                 <div>
-                  <button className="checkout2" onClick={deliverHandler}>
+                  <button className="checkout23" onClick={deliverHandler}>
                     Mark As Delivered
                   </button>
                 </div>

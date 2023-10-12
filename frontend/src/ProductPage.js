@@ -100,7 +100,7 @@ const ProductPage = ({ match, history }) => {
                 <div class="price">
                   <p>Rs.{product.price}</p>
                 </div>
-                <div class="description">
+                <div style={{ marginLeft: "0px" }} class="description">
                   <p>
                     Made in totally soft spandex material , which keeps you dry
                     anytime . <br></br>- 4 way stretch <br></br>
@@ -154,14 +154,16 @@ const ProductPage = ({ match, history }) => {
                     className="addto"
                     disabled={product.countInStock == 0}
                   >
-                    Add To Cart
+                    Add To Basket
                   </button>
                 </div>
                 {/* </Link> */}
               </div>
               <div class="reviews">
                 <h3>Reviews</h3>
-                {product.reviews.length == 0 && <Message>No Reviews</Message>}
+                {product.reviews.length == 0 && (
+                  <p style={{ fontSize: "19px" }}>No Reviews</p>
+                )}
                 <div class="review-level">
                   {product.reviews.map((review) => (
                     <div key={review.id}>
@@ -265,7 +267,7 @@ const ProductPage = ({ match, history }) => {
                           </button>
                         </form>
                       ) : (
-                        <Message>
+                        <p style={{ fontSize: "19px" }}>
                           Please{" "}
                           <Link
                             style={{
@@ -280,7 +282,7 @@ const ProductPage = ({ match, history }) => {
                             sign in{" "}
                           </Link>{" "}
                           to write a review
-                        </Message>
+                        </p>
                       )}
                       {/* <p>
                           Please <a href="#">sign-in</a> to write a review

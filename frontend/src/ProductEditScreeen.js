@@ -126,6 +126,7 @@ export const ProductEditScreen = ({ match, history }) => {
                 placeholder="Enter name"
                 value={name}
                 onChange={(e) => setName(e.target.value)}
+                pattern="[a-zA-Z'-'\s]*"
               />
             </div>
             <div className="form-group">
@@ -152,6 +153,7 @@ export const ProductEditScreen = ({ match, history }) => {
                 placeholder="Enter price"
                 value={price}
                 onChange={(e) => setPrice(e.target.value)}
+                min="1"
               />
             </div>
 
@@ -199,6 +201,7 @@ export const ProductEditScreen = ({ match, history }) => {
                   // display: "none",
                 }}
                 type="file"
+                accept="image/x-png,image/jpeg,image/jpg"
                 id="image-file"
                 onChange={uploadFileHandler}
               />
@@ -276,19 +279,42 @@ export const ProductEditScreen = ({ match, history }) => {
                 placeholder="Enter count in stock"
                 label="Is Admin"
                 value={countInStock}
+                pattern="[1-9]"
                 //  checked={isAdmin}
                 onChange={(e) => setCountInStock(e.target.value)}
               />
             </div>
-            <div className="form-group">
-              <label
+            <div
+              style={{
+                alignItems: "center",
+                width: "436px",
+                display: "flex",
+                padding: "12px 6px",
+                borderBottom: "2px solid rgb(65, 196, 255)",
+              }}
+              className="form-group"
+            >
+              <h6
                 style={{ color: "white", marginLeft: "6px", fontSize: "17px" }}
                 for="admin"
               >
                 Category
-              </label>
+              </h6>
+              <select
+                onChange={(e) => setCategory(e.target.value)}
+                style={{
+                  color: "black",
+                  marginLeft: "15px",
+                }}
+              >
+                <option>Select</option>
+                <option>Shirts</option>
+                <option>Shoes</option>
+                <option>Mens Jeans</option>
+                <option>Kids Wear</option>
+              </select>
               <br></br>
-              <input
+              {/* <input
                 type="text"
                 style={{
                   padding: "8px 130px 10px 12px",
@@ -307,7 +333,7 @@ export const ProductEditScreen = ({ match, history }) => {
                 value={category}
                 //  checked={isAdmin}
                 onChange={(e) => setCategory(e.target.value)}
-              />
+              /> */}
             </div>
             <div className="form-group">
               <label
@@ -340,7 +366,7 @@ export const ProductEditScreen = ({ match, history }) => {
             </div>
 
             <Button type="submit" variant="primary">
-              Update
+              Create
             </Button>
             <Button>
               <Link style={{ color: "white" }} to="/admin/productlist">

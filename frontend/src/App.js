@@ -41,6 +41,8 @@ import ProductListScreen from "./ProductListScreen";
 import ProductEditScreen from "./ProductEditScreeen";
 import OrderListScreen from "./OrderListScreen";
 import SearchBox from "./SearchBox.js";
+import { FaUser } from "react-icons/fa";
+import TrendingProducts from "./TrendingProducts";
 // import {LinkContainer} from 'react-router-bootstrap';
 function App() {
   const dispatch = useDispatch();
@@ -119,6 +121,68 @@ function App() {
                   <button className="search-button">Seacrh</button>
                 </div> */}
                 <ul className="links-list">
+                  <NavLink
+                    activeClassName="is-active"
+                    exact={true}
+                    className="nav-link"
+                    to=""
+                    style={{ marginTop: "2px" }}
+                  >
+                    <div className="dropdown" style={{ dislay: "flex" }}>
+                      {/* <MdAccountCircle
+                            className="signin-icon"
+                            style={{ fontSize: "25px" }}
+                          /> */}
+                      <h3 className="dropbtn">
+                        Categories
+                        <i
+                          style={{
+                            marginLeft: "5px",
+                            transform: " translate(0px, 0px)",
+                          }}
+                          class="fa fa-angle-down signin-icon"
+                        ></i>
+                      </h3>
+                      <div
+                        style={{ minWidth: "152px" }}
+                        className="dropdown-content"
+                      >
+                        <Link
+                          style={{ padding: "9px 12px" }}
+                          className="show"
+                          to="/Shirts"
+                        >
+                          {/* <MdAccountCircle className="signin-icon" /> */}
+                          Shirts
+                        </Link>
+                        <Link
+                          style={{ padding: "9px 12px" }}
+                          className="show"
+                          to="/jeans"
+                        >
+                          {/* <MdAccountCircle className="signin-icon" /> */}
+                          Men’s Jeans
+                        </Link>
+                        <Link
+                          style={{ padding: "9px 12px" }}
+                          className="show"
+                          to="/Shoesscreen"
+                        >
+                          {/* <MdAccountCircle className="signin-icon" /> */}
+                          Shoes
+                        </Link>
+                        <Link
+                          style={{ padding: "9px 12px" }}
+                          className="show"
+                          to="/kids"
+                        >
+                          {/* <MdAccountCircle className="signin-icon" /> */}
+                          Kids Wear
+                        </Link>
+                      </div>
+                    </div>
+                  </NavLink>
+
                   <li className="nav-item">
                     <NavLink
                       activeClassName="is-active"
@@ -127,8 +191,12 @@ function App() {
                       to="/cart"
                     >
                       <h3 className="cart">
-                        <BsCart4 className="cart-icon" />
-                        CART
+                        {/* <BsCart4 className="cart-icon" /> */}
+                        <i
+                          style={{ fontSize: "27px" }}
+                          class="fa fa-shopping-bag  cart-icon"
+                        ></i>
+                        {/* CART */}
                       </h3>
                     </NavLink>
                   </li>
@@ -146,17 +214,31 @@ function App() {
                           style={{ dislay: "flex" }}
                           id="username"
                         >
-                          <MdAccountCircle
+                          {/* <MdAccountCircle
                             className="signin-icon"
                             style={{ fontSize: "25px" }}
-                          />
-                          <h3 className="dropbtn">{userInfo.name}</h3>
-                          <div className="dropdown-content">
-                            <a className="show">
+                          /> */}
+                          <h3 className="dropbtn">
+                            {userInfo.name}
+                            <i
+                              style={{ marginLeft: "8px" }}
+                              class="fa fa-angle-down signin-icon"
+                            ></i>
+                          </h3>
+                          <div
+                            style={{ minWidth: "107px" }}
+                            // style={{ marginLeft: "38px" }}
+                            className="dropdown-content"
+                          >
+                            <a style={{ padding: "9px 11px" }} className="show">
                               {/* <MdAccountCircle className="signin-icon" /> */}
                               Profile
                             </a>
-                            <a className="show" onClick={logoutHandler}>
+                            <a
+                              style={{ padding: "9px 11px" }}
+                              className="show"
+                              onClick={logoutHandler}
+                            >
                               Logout
                             </a>
                           </div>
@@ -169,10 +251,11 @@ function App() {
                         className="nav-link"
                         to="/signin"
                       >
-                        <div style={{ marginTop: "3px" }}>
+                        <div>
                           <h3 className="cart">
                             {/* <MdAccountCircle className="signin-icon" /> */}
-                            LOG IN
+                            <FaUser style={{ fontSize: "26px" }} />
+                            {/* LOG IN */}
                           </h3>
                         </div>
                       </NavLink>
@@ -286,6 +369,7 @@ function AllRoutes({ hideMenu }) {
       <Route path="/kids" component={Kids}></Route>
       <Route path="/jeans" component={Jeans}></Route>
       <Route path="/shirts" component={Shirts}></Route>
+      <Route path="/trendingproducts" component={TrendingProducts}></Route>
       <Route path="/order/:id" component={Order}></Route>
       <Route path="/search/:keyword" component={Home} exact></Route>
       <Route path="/page/pageNumber" component={Home} exact></Route>

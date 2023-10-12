@@ -1,7 +1,7 @@
 .top1-div{
   background: url(./images/banner.png);
     background-position: center;
-    width: 80%;
+    /* width: 80%; */
 }
 .container1 {
   /* background: radial-gradient( 200.06% 102.25% at 50% 102.25%, #302632 0, #000000 95.92% ); */
@@ -68,8 +68,8 @@
     margin-top: 100px;
 }
 .bulb {
-  display: flex;
-  justify-content: space-evenly;
+  /* display: flex;
+        justify-content: space-evenly; */
 }
 .images {
   width: 332px !important;
@@ -84,7 +84,7 @@
   color: #1c2a36;
   font-size: 34px;
     font-weight: 600;
-    width: 316px;
+    width: 356px;
 }
 .contain h6 {
   font-size: 24px;
@@ -161,6 +161,10 @@
 
 .pagination li:last-child {
   display: none;
+}
+.previousClassName {
+  border-top-left-radius: 19px;
+  border-bottom-left-radius: 19px;
 }
 
 /* .active {
